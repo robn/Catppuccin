@@ -13,10 +13,14 @@ my $data = decode_json($res->{content});
 
 say 'use utf8;';
 
+sub sort_by ($key, $data) {
+  sort { $data->{$a}{order} <=> $data->{$b}{order} } keys %$data;
+}
+
 emit_package(undef, 'Catppuccin::Data', sub ($st) {
   emit_sub_str($st, version => delete $data->{version});
 
-  my @flavors = sort keys %$data;
+  my @flavors = sort_by('order', $data);
 
   for my $flavor (@flavors) {
     emit_package($st, $flavor, sub ($st) {
@@ -30,7 +34,8 @@ emit_package(undef, 'Catppuccin::Data', sub ($st) {
 
       emit_package($st, 'color', sub ($st) {
         my $colors = $data->{colors};
-        for my $color (sort keys %$colors) {
+        my @colors = sort_by('order', $colors);
+        for my $color (@colors) {
           my $data = $colors->{$color};
 
           emit_package($st, $color, sub ($st) {
@@ -50,7 +55,8 @@ emit_package(undef, 'Catppuccin::Data', sub ($st) {
 
       emit_package($st, 'ansi', sub ($st) {
         my $colors = $data->{ansiColors};
-        for my $color (sort keys %$colors) {
+        my @colors = sort_by('order', $colors);
+        for my $color (@colors) {
           my $data = $colors->{$color};
 
           emit_package($st, $color, sub ($st) {

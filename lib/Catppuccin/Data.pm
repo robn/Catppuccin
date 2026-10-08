@@ -1,3 +1,5 @@
+use warnings;
+use strict;
 use utf8;
 package Catppuccin::Data {
   sub version { q{1.8.0} }

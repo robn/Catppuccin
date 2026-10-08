@@ -11,6 +11,8 @@ my $res = HTTP::Tiny->new->get(
 die "E: $res->{content}" unless $res->{success};
 my $data = decode_json($res->{content});
 
+say 'use warnings;';
+say 'use strict;';
 say 'use utf8;';
 
 sub sort_by ($key, $data) {

@@ -1,0 +1,132 @@
+#!perl
+use v5.36;
+use HTTP::Tiny;
+use Cpanel::JSON::XS;
+
+binmode STDOUT, ':encoding(UTF-8)';
+
+my $res = HTTP::Tiny->new->get(
+  'https://raw.githubusercontent.com/catppuccin/palette/refs/tags/v1.8.0/palette.json',
+);
+die "E: $res->{content}" unless $res->{success};
+my $data = decode_json($res->{content});
+
+say 'use utf8;';
+
+emit_package(undef, 'Catppuccin::Data', sub ($st) {
+  emit_sub_str($st, version => delete $data->{version});
+
+  for my $flavor (sort keys %$data) {
+    emit_package($st, $flavor, sub ($st) {
+      my $data = $data->{$flavor};
+
+      emit_sub_str($st, id => $flavor);
+      emit_sub_str($st, name => $data->{name});
+      emit_sub_str($st, emoji => $data->{emoji});
+      emit_sub_num($st, order => $data->{order});
+      emit_sub_bool($st, dark => $data->{dark});
+
+      emit_package($st, 'colors', sub ($st) {
+        my $colors = $data->{colors};
+        for my $color (sort keys %$colors) {
+          my $data = $colors->{$color};
+
+          emit_package($st, $color, sub ($st) {
+            emit_sub_str($st, id => $color);
+            emit_sub_str($st, name => $data->{name});
+            emit_sub_num($st, order => $data->{order});
+            emit_sub_bool($st, accent => $data->{accent});
+
+            emit_sub_str($st, hex => $data->{hex});
+            emit_sub_num_array($st, rgb => $data->{rgb}->@{qw(r g b)});
+            emit_sub_num_array($st, hsl => $data->{hsl}->@{qw(h s l)});
+            emit_sub_num_array($st, oklch => $data->{oklch}->@{qw(l c h)});
+          });
+        }
+      });
+
+      emit_package($st, 'ansi', sub ($st) {
+        my $colors = $data->{ansiColors};
+        for my $color (sort keys %$colors) {
+          my $data = $colors->{$color};
+
+          emit_package($st, $color, sub ($st) {
+            emit_sub_str($st, id => $color);
+            emit_sub_str($st, name => $data->{name});
+            emit_sub_num($st, order => $data->{order});
+
+            emit_package($st, 'normal', sub ($st) {
+              my $data = $data->{normal};
+
+              emit_sub_str($st, name => $data->{name});
+              emit_sub_num($st, code => $data->{code});
+
+              emit_sub_str($st, hex => $data->{hex});
+              emit_sub_num_array($st, rgb => $data->{rgb}->@{qw(r g b)});
+              emit_sub_num_array($st, hsl => $data->{hsl}->@{qw(h s l)});
+              emit_sub_num_array($st, oklch => $data->{oklch}->@{qw(l c h)});
+            });
+
+            emit_package($st, 'bright', sub ($st) {
+              my $data = $data->{bright};
+
+              emit_sub_str($st, name => $data->{name});
+              emit_sub_num($st, code => $data->{code});
+
+              emit_sub_str($st, hex => $data->{hex});
+              emit_sub_num_array($st, rgb => $data->{rgb}->@{qw(r g b)});
+              emit_sub_num_array($st, hsl => $data->{hsl}->@{qw(h s l)});
+              emit_sub_num_array($st, oklch => $data->{oklch}->@{qw(l c h)});
+            });
+          });
+        }
+      });
+    });
+  }
+});
+
+say '1;';
+
+sub emit_package ($st, $name, $cb) {
+  if ($st) {
+    push $st->{stack}->@*, $st->{pkg};
+    $st->{pkg} = $st->{pkg}.'::'.ucfirst($name);
+    emit_sub_str($st, $name, $st->{pkg});
+  } else {
+    $st = {
+      stack => [],
+      pkg => ucfirst($name),
+      indent => '',
+    };
+  }
+
+  emit_indent($st, 'package '.$st->{pkg}.' {');
+  $st->{indent} = '  ' x ($st->{stack}->@* + 1);
+  $cb->($st);
+  $st->{indent} = '  ' x $st->{stack}->@*;
+  emit_indent($st, '}');
+
+  if ($st->{stack}->@*) {
+    $st->{pkg} = pop $st->{stack}->@*;
+  }
+}
+
+sub emit_indent ($st, $str) {
+  say $st->{indent} . $str;
+}
+
+sub emit_sub_str ($st, $sub, $str) {
+  emit_indent($st, 'sub '.$sub.' { q{'.$str.'} }');
+}
+
+sub emit_sub_num ($st, $sub, $num) {
+  emit_indent($st, 'sub '.$sub.' { '.(0+$num).' }');
+}
+
+sub emit_sub_num_array ($st, $sub, @num) {
+  emit_indent($st, 'sub '.$sub.' { ('.join(',', map { 0+$_ } @num).') }');
+}
+
+sub emit_sub_bool ($st, $sub, $bool) {
+  emit_indent($st, 'sub '.$sub.' { '.(!!$bool ? '1' : '0').' }');
+}

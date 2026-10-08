@@ -8,10 +8,10 @@ package Catppuccin::Data {
     sub emoji { q{🪴} }
     sub order { 1 }
     sub dark { 1 }
-    sub colors { q{Catppuccin::Data::Frappe::Colors} }
-    package Catppuccin::Data::Frappe::Colors {
-      sub base { q{Catppuccin::Data::Frappe::Colors::Base} }
-      package Catppuccin::Data::Frappe::Colors::Base {
+    sub color { q{Catppuccin::Data::Frappe::Color} }
+    package Catppuccin::Data::Frappe::Color {
+      sub base { q{Catppuccin::Data::Frappe::Color::Base} }
+      package Catppuccin::Data::Frappe::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -21,8 +21,8 @@ package Catppuccin::Data {
         sub hsl { (229.090909090909,0.186440677966102,0.231372549019608) }
         sub oklch { (0.329074001940859,0.0323913109239601,274.75804633083) }
       }
-      sub blue { q{Catppuccin::Data::Frappe::Colors::Blue} }
-      package Catppuccin::Data::Frappe::Colors::Blue {
+      sub blue { q{Catppuccin::Data::Frappe::Color::Blue} }
+      package Catppuccin::Data::Frappe::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -32,8 +32,8 @@ package Catppuccin::Data {
         sub hsl { (221.632653061224,0.742424242424242,0.741176470588235) }
         sub oklch { (0.742010117188879,0.104443551287746,265.663192656093) }
       }
-      sub crust { q{Catppuccin::Data::Frappe::Colors::Crust} }
-      package Catppuccin::Data::Frappe::Colors::Crust {
+      sub crust { q{Catppuccin::Data::Frappe::Color::Crust} }
+      package Catppuccin::Data::Frappe::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -43,8 +43,8 @@ package Catppuccin::Data {
         sub hsl { (229.411764705882,0.195402298850575,0.170588235294118) }
         sub oklch { (0.272001884983978,0.0263866694433252,275.115404819166) }
       }
-      sub flamingo { q{Catppuccin::Data::Frappe::Colors::Flamingo} }
-      package Catppuccin::Data::Frappe::Colors::Flamingo {
+      sub flamingo { q{Catppuccin::Data::Frappe::Color::Flamingo} }
+      package Catppuccin::Data::Frappe::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -54,8 +54,8 @@ package Catppuccin::Data {
         sub hsl { (0,0.585365853658537,0.83921568627451) }
         sub oklch { (0.843939820682561,0.0553088720784619,18.3066484743889) }
       }
-      sub green { q{Catppuccin::Data::Frappe::Colors::Green} }
-      package Catppuccin::Data::Frappe::Colors::Green {
+      sub green { q{Catppuccin::Data::Frappe::Color::Green} }
+      package Catppuccin::Data::Frappe::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -65,8 +65,8 @@ package Catppuccin::Data {
         sub hsl { (95.8333333333333,0.439024390243902,0.67843137254902) }
         sub oklch { (0.812373906220774,0.107060918880116,133.391920893396) }
       }
-      sub lavender { q{Catppuccin::Data::Frappe::Colors::Lavender} }
-      package Catppuccin::Data::Frappe::Colors::Lavender {
+      sub lavender { q{Catppuccin::Data::Frappe::Color::Lavender} }
+      package Catppuccin::Data::Frappe::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -76,8 +76,8 @@ package Catppuccin::Data {
         sub hsl { (238.909090909091,0.662650602409638,0.837254901960784) }
         sub oklch { (0.809899271286186,0.0758827742129732,283.740493583355) }
       }
-      sub mantle { q{Catppuccin::Data::Frappe::Colors::Mantle} }
-      package Catppuccin::Data::Frappe::Colors::Mantle {
+      sub mantle { q{Catppuccin::Data::Frappe::Color::Mantle} }
+      package Catppuccin::Data::Frappe::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -87,8 +87,8 @@ package Catppuccin::Data {
         sub hsl { (230.526315789474,0.188118811881188,0.198039215686275) }
         sub oklch { (0.297341617804551,0.029378405338955,276.21439474345) }
       }
-      sub maroon { q{Catppuccin::Data::Frappe::Colors::Maroon} }
-      package Catppuccin::Data::Frappe::Colors::Maroon {
+      sub maroon { q{Catppuccin::Data::Frappe::Color::Maroon} }
+      package Catppuccin::Data::Frappe::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -98,8 +98,8 @@ package Catppuccin::Data {
         sub hsl { (357.777777777778,0.658536585365853,0.758823529411765) }
         sub oklch { (0.764639170587165,0.0975597941090391,17.1770519463091) }
       }
-      sub mauve { q{Catppuccin::Data::Frappe::Colors::Mauve} }
-      package Catppuccin::Data::Frappe::Colors::Mauve {
+      sub mauve { q{Catppuccin::Data::Frappe::Color::Mauve} }
+      package Catppuccin::Data::Frappe::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -109,8 +109,8 @@ package Catppuccin::Data {
         sub hsl { (276.666666666667,0.590163934426229,0.76078431372549) }
         sub oklch { (0.764753049713169,0.110770974720955,311.743604720391) }
       }
-      sub overlay0 { q{Catppuccin::Data::Frappe::Colors::Overlay0} }
-      package Catppuccin::Data::Frappe::Colors::Overlay0 {
+      sub overlay0 { q{Catppuccin::Data::Frappe::Color::Overlay0} }
+      package Catppuccin::Data::Frappe::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -120,8 +120,8 @@ package Catppuccin::Data {
         sub hsl { (229.090909090909,0.133603238866397,0.515686274509804) }
         sub oklch { (0.580854423396155,0.042052429883359,275.198182828308) }
       }
-      sub overlay1 { q{Catppuccin::Data::Frappe::Colors::Overlay1} }
-      package Catppuccin::Data::Frappe::Colors::Overlay1 {
+      sub overlay1 { q{Catppuccin::Data::Frappe::Color::Overlay1} }
+      package Catppuccin::Data::Frappe::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -131,8 +131,8 @@ package Catppuccin::Data {
         sub hsl { (226.666666666667,0.169811320754717,0.584313725490196) }
         sub oklch { (0.640055458608038,0.0430001503544456,272.613701258403) }
       }
-      sub overlay2 { q{Catppuccin::Data::Frappe::Colors::Overlay2} }
-      package Catppuccin::Data::Frappe::Colors::Overlay2 {
+      sub overlay2 { q{Catppuccin::Data::Frappe::Color::Overlay2} }
+      package Catppuccin::Data::Frappe::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -142,8 +142,8 @@ package Catppuccin::Data {
         sub hsl { (227.692307692308,0.222857142857143,0.656862745098039) }
         sub oklch { (0.696974154528872,0.0463698321912242,273.776911785343) }
       }
-      sub peach { q{Catppuccin::Data::Frappe::Colors::Peach} }
-      package Catppuccin::Data::Frappe::Colors::Peach {
+      sub peach { q{Catppuccin::Data::Frappe::Color::Peach} }
+      package Catppuccin::Data::Frappe::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -153,8 +153,8 @@ package Catppuccin::Data {
         sub hsl { (20.3305785123967,0.790849673202614,0.7) }
         sub oklch { (0.772722342488044,0.110571543220686,47.7263819727679) }
       }
-      sub pink { q{Catppuccin::Data::Frappe::Colors::Pink} }
-      package Catppuccin::Data::Frappe::Colors::Pink {
+      sub pink { q{Catppuccin::Data::Frappe::Color::Pink} }
+      package Catppuccin::Data::Frappe::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -164,8 +164,8 @@ package Catppuccin::Data {
         sub hsl { (316,0.731707317073171,0.83921568627451) }
         sub oklch { (0.850368709511421,0.0892420565329974,336.263305456001) }
       }
-      sub red { q{Catppuccin::Data::Frappe::Colors::Red} }
-      package Catppuccin::Data::Frappe::Colors::Red {
+      sub red { q{Catppuccin::Data::Frappe::Color::Red} }
+      package Catppuccin::Data::Frappe::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -175,8 +175,8 @@ package Catppuccin::Data {
         sub hsl { (358.811881188119,0.677852348993289,0.707843137254902) }
         sub oklch { (0.717098722182712,0.124368134551872,19.3859052244265) }
       }
-      sub rosewater { q{Catppuccin::Data::Frappe::Colors::Rosewater} }
-      package Catppuccin::Data::Frappe::Colors::Rosewater {
+      sub rosewater { q{Catppuccin::Data::Frappe::Color::Rosewater} }
+      package Catppuccin::Data::Frappe::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -186,8 +186,8 @@ package Catppuccin::Data {
         sub hsl { (10.2857142857143,0.573770491803278,0.880392156862745) }
         sub oklch { (0.89545210631128,0.0335487942259027,31.5995597887068) }
       }
-      sub sapphire { q{Catppuccin::Data::Frappe::Colors::Sapphire} }
-      package Catppuccin::Data::Frappe::Colors::Sapphire {
+      sub sapphire { q{Catppuccin::Data::Frappe::Color::Sapphire} }
+      package Catppuccin::Data::Frappe::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -197,8 +197,8 @@ package Catppuccin::Data {
         sub hsl { (198.620689655172,0.554140127388535,0.692156862745098) }
         sub oklch { (0.77955343422251,0.0726754061492902,227.87968935766) }
       }
-      sub sky { q{Catppuccin::Data::Frappe::Colors::Sky} }
-      package Catppuccin::Data::Frappe::Colors::Sky {
+      sub sky { q{Catppuccin::Data::Frappe::Color::Sky} }
+      package Catppuccin::Data::Frappe::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -208,8 +208,8 @@ package Catppuccin::Data {
         sub hsl { (189.090909090909,0.478260869565217,0.729411764705882) }
         sub oklch { (0.82550220281542,0.0591599878934928,209.756111068615) }
       }
-      sub subtext0 { q{Catppuccin::Data::Frappe::Colors::Subtext0} }
-      package Catppuccin::Data::Frappe::Colors::Subtext0 {
+      sub subtext0 { q{Catppuccin::Data::Frappe::Color::Subtext0} }
+      package Catppuccin::Data::Frappe::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -219,8 +219,8 @@ package Catppuccin::Data {
         sub hsl { (228.292682926829,0.294964028776978,0.727450980392157) }
         sub oklch { (0.752383817708528,0.0482828906614922,274.472592936756) }
       }
-      sub subtext1 { q{Catppuccin::Data::Frappe::Colors::Subtext1} }
-      package Catppuccin::Data::Frappe::Colors::Subtext1 {
+      sub subtext1 { q{Catppuccin::Data::Frappe::Color::Subtext1} }
+      package Catppuccin::Data::Frappe::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -230,8 +230,8 @@ package Catppuccin::Data {
         sub hsl { (226.666666666667,0.436893203883495,0.798039215686275) }
         sub oklch { (0.808435081185243,0.0506698222748445,272.677974625096) }
       }
-      sub surface0 { q{Catppuccin::Data::Frappe::Colors::Surface0} }
-      package Catppuccin::Data::Frappe::Colors::Surface0 {
+      sub surface0 { q{Catppuccin::Data::Frappe::Color::Surface0} }
+      package Catppuccin::Data::Frappe::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -241,8 +241,8 @@ package Catppuccin::Data {
         sub hsl { (230,0.155844155844156,0.301960784313725) }
         sub oklch { (0.394918844714492,0.0342392761201927,275.899927458692) }
       }
-      sub surface1 { q{Catppuccin::Data::Frappe::Colors::Surface1} }
-      package Catppuccin::Data::Frappe::Colors::Surface1 {
+      sub surface1 { q{Catppuccin::Data::Frappe::Color::Surface1} }
+      package Catppuccin::Data::Frappe::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -252,8 +252,8 @@ package Catppuccin::Data {
         sub hsl { (227.142857142857,0.147368421052632,0.372549019607843) }
         sub oklch { (0.460056604215664,0.0366614499175497,272.965798736086) }
       }
-      sub surface2 { q{Catppuccin::Data::Frappe::Colors::Surface2} }
-      package Catppuccin::Data::Frappe::Colors::Surface2 {
+      sub surface2 { q{Catppuccin::Data::Frappe::Color::Surface2} }
+      package Catppuccin::Data::Frappe::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -263,8 +263,8 @@ package Catppuccin::Data {
         sub hsl { (228,0.132743362831858,0.443137254901961) }
         sub oklch { (0.521117166361794,0.0385895789059929,273.999201667152) }
       }
-      sub teal { q{Catppuccin::Data::Frappe::Colors::Teal} }
-      package Catppuccin::Data::Frappe::Colors::Teal {
+      sub teal { q{Catppuccin::Data::Frappe::Color::Teal} }
+      package Catppuccin::Data::Frappe::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -274,8 +274,8 @@ package Catppuccin::Data {
         sub hsl { (171.549295774648,0.392265193370166,0.645098039215686) }
         sub oklch { (0.782980304565163,0.0729606497671879,184.644972755124) }
       }
-      sub text { q{Catppuccin::Data::Frappe::Colors::Text} }
-      package Catppuccin::Data::Frappe::Colors::Text {
+      sub text { q{Catppuccin::Data::Frappe::Color::Text} }
+      package Catppuccin::Data::Frappe::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -285,8 +285,8 @@ package Catppuccin::Data {
         sub hsl { (227.234042553192,0.701492537313433,0.868627450980392) }
         sub oklch { (0.861915903722206,0.0525532921391717,273.347361077195) }
       }
-      sub yellow { q{Catppuccin::Data::Frappe::Colors::Yellow} }
-      package Catppuccin::Data::Frappe::Colors::Yellow {
+      sub yellow { q{Catppuccin::Data::Frappe::Color::Yellow} }
+      package Catppuccin::Data::Frappe::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -297,6 +297,7 @@ package Catppuccin::Data {
         sub oklch { (0.844316475554874,0.079543440217882,83.4716500634123) }
       }
     }
+    sub colors { (q{Catppuccin::Data::Frappe::Color::Base},q{Catppuccin::Data::Frappe::Color::Blue},q{Catppuccin::Data::Frappe::Color::Crust},q{Catppuccin::Data::Frappe::Color::Flamingo},q{Catppuccin::Data::Frappe::Color::Green},q{Catppuccin::Data::Frappe::Color::Lavender},q{Catppuccin::Data::Frappe::Color::Mantle},q{Catppuccin::Data::Frappe::Color::Maroon},q{Catppuccin::Data::Frappe::Color::Mauve},q{Catppuccin::Data::Frappe::Color::Overlay0},q{Catppuccin::Data::Frappe::Color::Overlay1},q{Catppuccin::Data::Frappe::Color::Overlay2},q{Catppuccin::Data::Frappe::Color::Peach},q{Catppuccin::Data::Frappe::Color::Pink},q{Catppuccin::Data::Frappe::Color::Red},q{Catppuccin::Data::Frappe::Color::Rosewater},q{Catppuccin::Data::Frappe::Color::Sapphire},q{Catppuccin::Data::Frappe::Color::Sky},q{Catppuccin::Data::Frappe::Color::Subtext0},q{Catppuccin::Data::Frappe::Color::Subtext1},q{Catppuccin::Data::Frappe::Color::Surface0},q{Catppuccin::Data::Frappe::Color::Surface1},q{Catppuccin::Data::Frappe::Color::Surface2},q{Catppuccin::Data::Frappe::Color::Teal},q{Catppuccin::Data::Frappe::Color::Text},q{Catppuccin::Data::Frappe::Color::Yellow}) }
     sub ansi { q{Catppuccin::Data::Frappe::Ansi} }
     package Catppuccin::Data::Frappe::Ansi {
       sub black { q{Catppuccin::Data::Frappe::Ansi::Black} }
@@ -492,6 +493,7 @@ package Catppuccin::Data {
         }
       }
     }
+    sub ansi_colors { (q{Catppuccin::Data::Frappe::Ansi::Black},q{Catppuccin::Data::Frappe::Ansi::Blue},q{Catppuccin::Data::Frappe::Ansi::Cyan},q{Catppuccin::Data::Frappe::Ansi::Green},q{Catppuccin::Data::Frappe::Ansi::Magenta},q{Catppuccin::Data::Frappe::Ansi::Red},q{Catppuccin::Data::Frappe::Ansi::White},q{Catppuccin::Data::Frappe::Ansi::Yellow}) }
   }
   sub latte { q{Catppuccin::Data::Latte} }
   package Catppuccin::Data::Latte {
@@ -500,10 +502,10 @@ package Catppuccin::Data {
     sub emoji { q{🌻} }
     sub order { 0 }
     sub dark { 0 }
-    sub colors { q{Catppuccin::Data::Latte::Colors} }
-    package Catppuccin::Data::Latte::Colors {
-      sub base { q{Catppuccin::Data::Latte::Colors::Base} }
-      package Catppuccin::Data::Latte::Colors::Base {
+    sub color { q{Catppuccin::Data::Latte::Color} }
+    package Catppuccin::Data::Latte::Color {
+      sub base { q{Catppuccin::Data::Latte::Color::Base} }
+      package Catppuccin::Data::Latte::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -513,8 +515,8 @@ package Catppuccin::Data {
         sub hsl { (220,0.230769230769231,0.949019607843137) }
         sub oklch { (0.957760887076093,0.00576680241031033,264.532151644555) }
       }
-      sub blue { q{Catppuccin::Data::Latte::Colors::Blue} }
-      package Catppuccin::Data::Latte::Colors::Blue {
+      sub blue { q{Catppuccin::Data::Latte::Color::Blue} }
+      package Catppuccin::Data::Latte::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -524,8 +526,8 @@ package Catppuccin::Data {
         sub hsl { (219.906976744186,0.914893617021277,0.53921568627451) }
         sub oklch { (0.558616851915744,0.225502522656889,262.086650560498) }
       }
-      sub crust { q{Catppuccin::Data::Latte::Colors::Crust} }
-      package Catppuccin::Data::Latte::Colors::Crust {
+      sub crust { q{Catppuccin::Data::Latte::Color::Crust} }
+      package Catppuccin::Data::Latte::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -535,8 +537,8 @@ package Catppuccin::Data {
         sub hsl { (220,0.206896551724138,0.886274509803922) }
         sub oklch { (0.905964995559709,0.0117165076778133,264.507105166824) }
       }
-      sub flamingo { q{Catppuccin::Data::Latte::Colors::Flamingo} }
-      package Catppuccin::Data::Latte::Colors::Flamingo {
+      sub flamingo { q{Catppuccin::Data::Latte::Color::Flamingo} }
+      package Catppuccin::Data::Latte::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -546,8 +548,8 @@ package Catppuccin::Data {
         sub hsl { (0,0.597633136094675,0.668627450980392) }
         sub oklch { (0.685640085534859,0.125940489430368,20.86703533423) }
       }
-      sub green { q{Catppuccin::Data::Latte::Colors::Green} }
-      package Catppuccin::Data::Latte::Colors::Green {
+      sub green { q{Catppuccin::Data::Latte::Color::Green} }
+      package Catppuccin::Data::Latte::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -557,8 +559,8 @@ package Catppuccin::Data {
         sub hsl { (109.230769230769,0.576354679802956,0.398039215686275) }
         sub oklch { (0.625044390429536,0.177158161087621,140.444837591426) }
       }
-      sub lavender { q{Catppuccin::Data::Latte::Colors::Lavender} }
-      package Catppuccin::Data::Latte::Colors::Lavender {
+      sub lavender { q{Catppuccin::Data::Latte::Color::Lavender} }
+      package Catppuccin::Data::Latte::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -568,8 +570,8 @@ package Catppuccin::Data {
         sub hsl { (230.935251798561,0.972027972027972,0.719607843137255) }
         sub oklch { (0.663762899534403,0.175103303546464,273.134603506708) }
       }
-      sub mantle { q{Catppuccin::Data::Latte::Colors::Mantle} }
-      package Catppuccin::Data::Latte::Colors::Mantle {
+      sub mantle { q{Catppuccin::Data::Latte::Color::Mantle} }
+      package Catppuccin::Data::Latte::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -579,8 +581,8 @@ package Catppuccin::Data {
         sub hsl { (220,0.219512195121951,0.919607843137255) }
         sub oklch { (0.933459332410928,0.00871379906203183,264.520602235341) }
       }
-      sub maroon { q{Catppuccin::Data::Latte::Colors::Maroon} }
-      package Catppuccin::Data::Latte::Colors::Maroon {
+      sub maroon { q{Catppuccin::Data::Latte::Color::Maroon} }
+      package Catppuccin::Data::Latte::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -590,8 +592,8 @@ package Catppuccin::Data {
         sub hsl { (354.782608695652,0.76303317535545,0.586274509803922) }
         sub oklch { (0.625200580487491,0.19674637699386,20.2723807529374) }
       }
-      sub mauve { q{Catppuccin::Data::Latte::Colors::Mauve} }
-      package Catppuccin::Data::Latte::Colors::Mauve {
+      sub mauve { q{Catppuccin::Data::Latte::Color::Mauve} }
+      package Catppuccin::Data::Latte::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -601,8 +603,8 @@ package Catppuccin::Data {
         sub hsl { (266.043956043956,0.850467289719626,0.580392156862745) }
         sub oklch { (0.554669848375687,0.25034607990295,297.01564835005) }
       }
-      sub overlay0 { q{Catppuccin::Data::Latte::Colors::Overlay0} }
-      package Catppuccin::Data::Latte::Colors::Overlay0 {
+      sub overlay0 { q{Catppuccin::Data::Latte::Color::Overlay0} }
+      package Catppuccin::Data::Latte::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -612,8 +614,8 @@ package Catppuccin::Data {
         sub hsl { (228,0.112359550561798,0.650980392156863) }
         sub oklch { (0.707668458494878,0.023669865614292,274.600834871712) }
       }
-      sub overlay1 { q{Catppuccin::Data::Latte::Colors::Overlay1} }
-      package Catppuccin::Data::Latte::Colors::Overlay1 {
+      sub overlay1 { q{Catppuccin::Data::Latte::Color::Overlay1} }
+      package Catppuccin::Data::Latte::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -623,8 +625,8 @@ package Catppuccin::Data {
         sub hsl { (231.428571428571,0.100478468899521,0.590196078431373) }
         sub oklch { (0.653553629049302,0.0268787707712986,278.120815963121) }
       }
-      sub overlay2 { q{Catppuccin::Data::Latte::Colors::Overlay2} }
-      package Catppuccin::Data::Latte::Colors::Overlay2 {
+      sub overlay2 { q{Catppuccin::Data::Latte::Color::Overlay2} }
+      package Catppuccin::Data::Latte::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -634,8 +636,8 @@ package Catppuccin::Data {
         sub hsl { (232.173913043478,0.0962343096234309,0.531372549019608) }
         sub oklch { (0.600878139059423,0.0304904641622693,278.694364334887) }
       }
-      sub peach { q{Catppuccin::Data::Latte::Colors::Peach} }
-      package Catppuccin::Data::Latte::Colors::Peach {
+      sub peach { q{Catppuccin::Data::Latte::Color::Peach} }
+      package Catppuccin::Data::Latte::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -645,8 +647,8 @@ package Catppuccin::Data {
         sub hsl { (21.9753086419753,0.991836734693878,0.519607843137255) }
         sub oklch { (0.691976643336316,0.204051567585273,42.4292658007281) }
       }
-      sub pink { q{Catppuccin::Data::Latte::Colors::Pink} }
-      package Catppuccin::Data::Latte::Colors::Pink {
+      sub pink { q{Catppuccin::Data::Latte::Color::Pink} }
+      package Catppuccin::Data::Latte::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -656,8 +658,8 @@ package Catppuccin::Data {
         sub hsl { (316.034482758621,0.734177215189873,0.690196078431373) }
         sub oklch { (0.725559731342951,0.173932645626025,338.433342858689) }
       }
-      sub red { q{Catppuccin::Data::Latte::Colors::Red} }
-      package Catppuccin::Data::Latte::Colors::Red {
+      sub red { q{Catppuccin::Data::Latte::Color::Red} }
+      package Catppuccin::Data::Latte::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -667,8 +669,8 @@ package Catppuccin::Data {
         sub hsl { (347.076923076923,0.866666666666667,0.441176470588235) }
         sub oklch { (0.550474414253923,0.215514307601958,19.8094640441604) }
       }
-      sub rosewater { q{Catppuccin::Data::Latte::Colors::Rosewater} }
-      package Catppuccin::Data::Latte::Colors::Rosewater {
+      sub rosewater { q{Catppuccin::Data::Latte::Color::Rosewater} }
+      package Catppuccin::Data::Latte::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -678,8 +680,8 @@ package Catppuccin::Data {
         sub hsl { (10.8,0.588235294117647,0.666666666666667) }
         sub oklch { (0.714133417743932,0.104543081319015,33.0967197215932) }
       }
-      sub sapphire { q{Catppuccin::Data::Latte::Colors::Sapphire} }
-      package Catppuccin::Data::Latte::Colors::Sapphire {
+      sub sapphire { q{Catppuccin::Data::Latte::Color::Sapphire} }
+      package Catppuccin::Data::Latte::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -689,8 +691,8 @@ package Catppuccin::Data {
         sub hsl { (188.859060402685,0.699530516431925,0.417647058823529) }
         sub oklch { (0.647744360254855,0.106768525479533,212.889280559808) }
       }
-      sub sky { q{Catppuccin::Data::Latte::Colors::Sky} }
-      package Catppuccin::Data::Latte::Colors::Sky {
+      sub sky { q{Catppuccin::Data::Latte::Color::Sky} }
+      package Catppuccin::Data::Latte::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -700,8 +702,8 @@ package Catppuccin::Data {
         sub hsl { (197.066666666667,0.965665236051502,0.456862745098039) }
         sub oklch { (0.682019672741545,0.144818939505262,235.382218764632) }
       }
-      sub subtext0 { q{Catppuccin::Data::Latte::Colors::Subtext0} }
-      package Catppuccin::Data::Latte::Colors::Subtext0 {
+      sub subtext0 { q{Catppuccin::Data::Latte::Color::Subtext0} }
+      package Catppuccin::Data::Latte::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -711,8 +713,8 @@ package Catppuccin::Data {
         sub hsl { (232.8,0.103734439834025,0.472549019607843) }
         sub oklch { (0.547077637967648,0.0343427883752853,279.083697115318) }
       }
-      sub subtext1 { q{Catppuccin::Data::Latte::Colors::Subtext1} }
-      package Catppuccin::Data::Latte::Colors::Subtext1 {
+      sub subtext1 { q{Catppuccin::Data::Latte::Color::Subtext1} }
+      package Catppuccin::Data::Latte::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -722,8 +724,8 @@ package Catppuccin::Data {
         sub hsl { (233.333333333333,0.127962085308057,0.413725490196078) }
         sub oklch { (0.492002787767345,0.0384905025337914,279.299160578886) }
       }
-      sub surface0 { q{Catppuccin::Data::Latte::Colors::Surface0} }
-      package Catppuccin::Data::Latte::Colors::Surface0 {
+      sub surface0 { q{Catppuccin::Data::Latte::Color::Surface0} }
+      package Catppuccin::Data::Latte::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -733,8 +735,8 @@ package Catppuccin::Data {
         sub hsl { (222.857142857143,0.159090909090909,0.827450980392157) }
         sub oklch { (0.857477084820498,0.0144799844364945,268.475591718479) }
       }
-      sub surface1 { q{Catppuccin::Data::Latte::Colors::Surface1} }
-      package Catppuccin::Data::Latte::Colors::Surface1 {
+      sub surface1 { q{Catppuccin::Data::Latte::Color::Surface1} }
+      package Catppuccin::Data::Latte::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -744,8 +746,8 @@ package Catppuccin::Data {
         sub hsl { (225,0.135593220338983,0.768627450980392) }
         sub oklch { (0.808307011018275,0.0173933088086153,271.19815543179) }
       }
-      sub surface2 { q{Catppuccin::Data::Latte::Colors::Surface2} }
-      package Catppuccin::Data::Latte::Colors::Surface2 {
+      sub surface2 { q{Catppuccin::Data::Latte::Color::Surface2} }
+      package Catppuccin::Data::Latte::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -755,8 +757,8 @@ package Catppuccin::Data {
         sub hsl { (226.666666666667,0.121621621621622,0.709803921568627) }
         sub oklch { (0.758394352158996,0.0204534402415715,273.153552246035) }
       }
-      sub teal { q{Catppuccin::Data::Latte::Colors::Teal} }
-      package Catppuccin::Data::Latte::Colors::Teal {
+      sub teal { q{Catppuccin::Data::Latte::Color::Teal} }
+      package Catppuccin::Data::Latte::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -766,8 +768,8 @@ package Catppuccin::Data {
         sub hsl { (183.230769230769,0.738636363636364,0.345098039215686) }
         sub oklch { (0.602268968448023,0.0981149578923705,201.104748377215) }
       }
-      sub text { q{Catppuccin::Data::Latte::Colors::Text} }
-      package Catppuccin::Data::Latte::Colors::Text {
+      sub text { q{Catppuccin::Data::Latte::Color::Text} }
+      package Catppuccin::Data::Latte::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -777,8 +779,8 @@ package Catppuccin::Data {
         sub hsl { (233.793103448276,0.160220994475138,0.354901960784314) }
         sub oklch { (0.435469628091424,0.0430079579048629,279.325020951234) }
       }
-      sub yellow { q{Catppuccin::Data::Latte::Colors::Yellow} }
-      package Catppuccin::Data::Latte::Colors::Yellow {
+      sub yellow { q{Catppuccin::Data::Latte::Color::Yellow} }
+      package Catppuccin::Data::Latte::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -789,6 +791,7 @@ package Catppuccin::Data {
         sub oklch { (0.71399173095047,0.149441640806842,67.7766553475321) }
       }
     }
+    sub colors { (q{Catppuccin::Data::Latte::Color::Base},q{Catppuccin::Data::Latte::Color::Blue},q{Catppuccin::Data::Latte::Color::Crust},q{Catppuccin::Data::Latte::Color::Flamingo},q{Catppuccin::Data::Latte::Color::Green},q{Catppuccin::Data::Latte::Color::Lavender},q{Catppuccin::Data::Latte::Color::Mantle},q{Catppuccin::Data::Latte::Color::Maroon},q{Catppuccin::Data::Latte::Color::Mauve},q{Catppuccin::Data::Latte::Color::Overlay0},q{Catppuccin::Data::Latte::Color::Overlay1},q{Catppuccin::Data::Latte::Color::Overlay2},q{Catppuccin::Data::Latte::Color::Peach},q{Catppuccin::Data::Latte::Color::Pink},q{Catppuccin::Data::Latte::Color::Red},q{Catppuccin::Data::Latte::Color::Rosewater},q{Catppuccin::Data::Latte::Color::Sapphire},q{Catppuccin::Data::Latte::Color::Sky},q{Catppuccin::Data::Latte::Color::Subtext0},q{Catppuccin::Data::Latte::Color::Subtext1},q{Catppuccin::Data::Latte::Color::Surface0},q{Catppuccin::Data::Latte::Color::Surface1},q{Catppuccin::Data::Latte::Color::Surface2},q{Catppuccin::Data::Latte::Color::Teal},q{Catppuccin::Data::Latte::Color::Text},q{Catppuccin::Data::Latte::Color::Yellow}) }
     sub ansi { q{Catppuccin::Data::Latte::Ansi} }
     package Catppuccin::Data::Latte::Ansi {
       sub black { q{Catppuccin::Data::Latte::Ansi::Black} }
@@ -984,6 +987,7 @@ package Catppuccin::Data {
         }
       }
     }
+    sub ansi_colors { (q{Catppuccin::Data::Latte::Ansi::Black},q{Catppuccin::Data::Latte::Ansi::Blue},q{Catppuccin::Data::Latte::Ansi::Cyan},q{Catppuccin::Data::Latte::Ansi::Green},q{Catppuccin::Data::Latte::Ansi::Magenta},q{Catppuccin::Data::Latte::Ansi::Red},q{Catppuccin::Data::Latte::Ansi::White},q{Catppuccin::Data::Latte::Ansi::Yellow}) }
   }
   sub macchiato { q{Catppuccin::Data::Macchiato} }
   package Catppuccin::Data::Macchiato {
@@ -992,10 +996,10 @@ package Catppuccin::Data {
     sub emoji { q{🌺} }
     sub order { 2 }
     sub dark { 1 }
-    sub colors { q{Catppuccin::Data::Macchiato::Colors} }
-    package Catppuccin::Data::Macchiato::Colors {
-      sub base { q{Catppuccin::Data::Macchiato::Colors::Base} }
-      package Catppuccin::Data::Macchiato::Colors::Base {
+    sub color { q{Catppuccin::Data::Macchiato::Color} }
+    package Catppuccin::Data::Macchiato::Color {
+      sub base { q{Catppuccin::Data::Macchiato::Color::Base} }
+      package Catppuccin::Data::Macchiato::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -1005,8 +1009,8 @@ package Catppuccin::Data {
         sub hsl { (231.818181818182,0.234042553191489,0.184313725490196) }
         sub oklch { (0.278808297866842,0.0353411582950485,276.936815382128) }
       }
-      sub blue { q{Catppuccin::Data::Macchiato::Colors::Blue} }
-      package Catppuccin::Data::Macchiato::Colors::Blue {
+      sub blue { q{Catppuccin::Data::Macchiato::Color::Blue} }
+      package Catppuccin::Data::Macchiato::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -1016,8 +1020,8 @@ package Catppuccin::Data {
         sub hsl { (220.188679245283,0.828125,0.749019607843137) }
         sub oklch { (0.749727822254407,0.110095575845028,263.810329203269) }
       }
-      sub crust { q{Catppuccin::Data::Macchiato::Colors::Crust} }
-      package Catppuccin::Data::Macchiato::Colors::Crust {
+      sub crust { q{Catppuccin::Data::Macchiato::Color::Crust} }
+      package Catppuccin::Data::Macchiato::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -1027,8 +1031,8 @@ package Catppuccin::Data {
         sub hsl { (235.714285714286,0.225806451612903,0.12156862745098) }
         sub oklch { (0.218805566996636,0.0254574078968935,280.657236823086) }
       }
-      sub flamingo { q{Catppuccin::Data::Macchiato::Colors::Flamingo} }
-      package Catppuccin::Data::Macchiato::Colors::Flamingo {
+      sub flamingo { q{Catppuccin::Data::Macchiato::Color::Flamingo} }
+      package Catppuccin::Data::Macchiato::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -1038,8 +1042,8 @@ package Catppuccin::Data {
         sub hsl { (0,0.583333333333333,0.858823529411765) }
         sub oklch { (0.86287874732009,0.0478940487275183,18.1203108459457) }
       }
-      sub green { q{Catppuccin::Data::Macchiato::Colors::Green} }
-      package Catppuccin::Data::Macchiato::Colors::Green {
+      sub green { q{Catppuccin::Data::Macchiato::Color::Green} }
+      package Catppuccin::Data::Macchiato::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -1049,8 +1053,8 @@ package Catppuccin::Data {
         sub hsl { (105.217391304348,0.482517482517482,0.719607843137255) }
         sub oklch { (0.83498496943401,0.107909776412959,138.150329847292) }
       }
-      sub lavender { q{Catppuccin::Data::Macchiato::Colors::Lavender} }
-      package Catppuccin::Data::Macchiato::Colors::Lavender {
+      sub lavender { q{Catppuccin::Data::Macchiato::Color::Lavender} }
+      package Catppuccin::Data::Macchiato::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -1060,8 +1064,8 @@ package Catppuccin::Data {
         sub hsl { (234.461538461538,0.822784810126582,0.845098039215686) }
         sub oklch { (0.814364913000351,0.0833519720769762,279.853667411748) }
       }
-      sub mantle { q{Catppuccin::Data::Macchiato::Colors::Mantle} }
-      package Catppuccin::Data::Macchiato::Colors::Mantle {
+      sub mantle { q{Catppuccin::Data::Macchiato::Color::Mantle} }
+      package Catppuccin::Data::Macchiato::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -1071,8 +1075,8 @@ package Catppuccin::Data {
         sub hsl { (233.333333333333,0.230769230769231,0.152941176470588) }
         sub oklch { (0.249250765812473,0.0304807007178624,278.435034187334) }
       }
-      sub maroon { q{Catppuccin::Data::Macchiato::Colors::Maroon} }
-      package Catppuccin::Data::Macchiato::Colors::Maroon {
+      sub maroon { q{Catppuccin::Data::Macchiato::Color::Maroon} }
+      package Catppuccin::Data::Macchiato::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -1082,8 +1086,8 @@ package Catppuccin::Data {
         sub hsl { (355.058823529412,0.714285714285714,0.766666666666667) }
         sub oklch { (0.770232108416198,0.10236712493806,14.3707343170264) }
       }
-      sub mauve { q{Catppuccin::Data::Macchiato::Colors::Mauve} }
-      package Catppuccin::Data::Macchiato::Colors::Mauve {
+      sub mauve { q{Catppuccin::Data::Macchiato::Color::Mauve} }
+      package Catppuccin::Data::Macchiato::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -1093,8 +1097,8 @@ package Catppuccin::Data {
         sub hsl { (266.511627906977,0.826923076923077,0.796078431372549) }
         sub oklch { (0.771522608032644,0.125895634755372,303.898394591392) }
       }
-      sub overlay0 { q{Catppuccin::Data::Macchiato::Colors::Overlay0} }
-      package Catppuccin::Data::Macchiato::Colors::Overlay0 {
+      sub overlay0 { q{Catppuccin::Data::Macchiato::Color::Overlay0} }
+      package Catppuccin::Data::Macchiato::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -1104,8 +1108,8 @@ package Catppuccin::Data {
         sub hsl { (230.322580645161,0.123505976095618,0.492156862745098) }
         sub oklch { (0.56079161245133,0.0406715398784128,276.474752866572) }
       }
-      sub overlay1 { q{Catppuccin::Data::Macchiato::Colors::Overlay1} }
-      package Catppuccin::Data::Macchiato::Colors::Overlay1 {
+      sub overlay1 { q{Catppuccin::Data::Macchiato::Color::Overlay1} }
+      package Catppuccin::Data::Macchiato::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -1115,8 +1119,8 @@ package Catppuccin::Data {
         sub hsl { (227.647058823529,0.154545454545455,0.568627450980392) }
         sub oklch { (0.627153669200802,0.0414728905342509,273.732824823871) }
       }
-      sub overlay2 { q{Catppuccin::Data::Macchiato::Colors::Overlay2} }
-      package Catppuccin::Data::Macchiato::Colors::Overlay2 {
+      sub overlay2 { q{Catppuccin::Data::Macchiato::Color::Overlay2} }
+      package Catppuccin::Data::Macchiato::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -1126,8 +1130,8 @@ package Catppuccin::Data {
         sub hsl { (228.333333333333,0.2,0.647058823529412) }
         sub oklch { (0.690488290925986,0.0433347303141852,274.538771140957) }
       }
-      sub peach { q{Catppuccin::Data::Macchiato::Colors::Peach} }
-      package Catppuccin::Data::Macchiato::Colors::Peach {
+      sub peach { q{Catppuccin::Data::Macchiato::Color::Peach} }
+      package Catppuccin::Data::Macchiato::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -1137,8 +1141,8 @@ package Catppuccin::Data {
         sub hsl { (21.3559322033898,0.855072463768116,0.729411764705882) }
         sub oklch { (0.798823070061601,0.106055554316779,49.6375862709047) }
       }
-      sub pink { q{Catppuccin::Data::Macchiato::Colors::Pink} }
-      package Catppuccin::Data::Macchiato::Colors::Pink {
+      sub pink { q{Catppuccin::Data::Macchiato::Color::Pink} }
+      package Catppuccin::Data::Macchiato::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -1148,8 +1152,8 @@ package Catppuccin::Data {
         sub hsl { (316.071428571429,0.736842105263158,0.850980392156863) }
         sub oklch { (0.860804113234452,0.083027508946297,336.179893036051) }
       }
-      sub red { q{Catppuccin::Data::Macchiato::Colors::Red} }
-      package Catppuccin::Data::Macchiato::Colors::Red {
+      sub red { q{Catppuccin::Data::Macchiato::Color::Red} }
+      package Catppuccin::Data::Macchiato::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -1159,8 +1163,8 @@ package Catppuccin::Data {
         sub hsl { (351.176470588235,0.739130434782609,0.729411764705882) }
         sub oklch { (0.736999819953577,0.12515625744541,11.1943183679601) }
       }
-      sub rosewater { q{Catppuccin::Data::Macchiato::Colors::Rosewater} }
-      package Catppuccin::Data::Macchiato::Colors::Rosewater {
+      sub rosewater { q{Catppuccin::Data::Macchiato::Color::Rosewater} }
+      package Catppuccin::Data::Macchiato::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -1170,8 +1174,8 @@ package Catppuccin::Data {
         sub hsl { (9.99999999999996,0.576923076923078,0.898039215686275) }
         sub oklch { (0.910520683432491,0.0286435024213148,31.1325549749212) }
       }
-      sub sapphire { q{Catppuccin::Data::Macchiato::Colors::Sapphire} }
-      package Catppuccin::Data::Macchiato::Colors::Sapphire {
+      sub sapphire { q{Catppuccin::Data::Macchiato::Color::Sapphire} }
+      package Catppuccin::Data::Macchiato::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -1181,8 +1185,8 @@ package Catppuccin::Data {
         sub hsl { (198.640776699029,0.656050955414013,0.692156862745098) }
         sub oklch { (0.785077206179302,0.0845208855601422,228.377974840602) }
       }
-      sub sky { q{Catppuccin::Data::Macchiato::Colors::Sky} }
-      package Catppuccin::Data::Macchiato::Colors::Sky {
+      sub sky { q{Catppuccin::Data::Macchiato::Color::Sky} }
+      package Catppuccin::Data::Macchiato::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -1192,8 +1196,8 @@ package Catppuccin::Data {
         sub hsl { (188.780487804878,0.594202898550725,0.729411764705882) }
         sub oklch { (0.836935492572236,0.0718693794483332,209.365774049977) }
       }
-      sub subtext0 { q{Catppuccin::Data::Macchiato::Colors::Subtext0} }
-      package Catppuccin::Data::Macchiato::Colors::Subtext0 {
+      sub subtext0 { q{Catppuccin::Data::Macchiato::Color::Subtext0} }
+      package Catppuccin::Data::Macchiato::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -1203,8 +1207,8 @@ package Catppuccin::Data {
         sub hsl { (227.368421052632,0.267605633802817,0.72156862745098) }
         sub oklch { (0.751280540270085,0.0440558566717991,273.532655471331) }
       }
-      sub subtext1 { q{Catppuccin::Data::Macchiato::Colors::Subtext1} }
-      package Catppuccin::Data::Macchiato::Colors::Subtext1 {
+      sub subtext1 { q{Catppuccin::Data::Macchiato::Color::Subtext1} }
+      package Catppuccin::Data::Macchiato::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -1214,8 +1218,8 @@ package Catppuccin::Data {
         sub hsl { (228,0.392156862745098,0.8) }
         sub oklch { (0.811977183467627,0.0459417988044203,274.267184551977) }
       }
-      sub surface0 { q{Catppuccin::Data::Macchiato::Colors::Surface0} }
-      package Catppuccin::Data::Macchiato::Colors::Surface0 {
+      sub surface0 { q{Catppuccin::Data::Macchiato::Color::Surface0} }
+      package Catppuccin::Data::Macchiato::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -1225,8 +1229,8 @@ package Catppuccin::Data {
         sub hsl { (230.4,0.18796992481203,0.26078431372549) }
         sub oklch { (0.353790366561865,0.0369466754112495,275.985096354481) }
       }
-      sub surface1 { q{Catppuccin::Data::Macchiato::Colors::Surface1} }
-      package Catppuccin::Data::Macchiato::Colors::Surface1 {
+      sub surface1 { q{Catppuccin::Data::Macchiato::Color::Surface1} }
+      package Catppuccin::Data::Macchiato::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -1236,8 +1240,8 @@ package Catppuccin::Data {
         sub hsl { (231.111111111111,0.15606936416185,0.33921568627451) }
         sub oklch { (0.42590353818195,0.0385085788991422,276.947676253187) }
       }
-      sub surface2 { q{Catppuccin::Data::Macchiato::Colors::Surface2} }
-      package Catppuccin::Data::Macchiato::Colors::Surface2 {
+      sub surface2 { q{Catppuccin::Data::Macchiato::Color::Surface2} }
+      package Catppuccin::Data::Macchiato::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -1247,8 +1251,8 @@ package Catppuccin::Data {
         sub hsl { (229.655172413793,0.137440758293839,0.413725490196078) }
         sub oklch { (0.493852279148929,0.0388722924962449,275.683315641442) }
       }
-      sub teal { q{Catppuccin::Data::Macchiato::Colors::Teal} }
-      package Catppuccin::Data::Macchiato::Colors::Teal {
+      sub teal { q{Catppuccin::Data::Macchiato::Color::Teal} }
+      package Catppuccin::Data::Macchiato::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -1258,8 +1262,8 @@ package Catppuccin::Data {
         sub hsl { (171.081081081081,0.468354430379747,0.690196078431373) }
         sub oklch { (0.821357775248586,0.0755059953458314,184.100028151927) }
       }
-      sub text { q{Catppuccin::Data::Macchiato::Colors::Text} }
-      package Catppuccin::Data::Macchiato::Colors::Text {
+      sub text { q{Catppuccin::Data::Macchiato::Color::Text} }
+      package Catppuccin::Data::Macchiato::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -1269,8 +1273,8 @@ package Catppuccin::Data {
         sub hsl { (227.441860465116,0.682539682539683,0.876470588235294) }
         sub oklch { (0.870825085511304,0.0480775215477313,273.665090681354) }
       }
-      sub yellow { q{Catppuccin::Data::Macchiato::Colors::Yellow} }
-      package Catppuccin::Data::Macchiato::Colors::Yellow {
+      sub yellow { q{Catppuccin::Data::Macchiato::Color::Yellow} }
+      package Catppuccin::Data::Macchiato::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -1281,6 +1285,7 @@ package Catppuccin::Data {
         sub oklch { (0.87898903272889,0.0744419390304426,84.750976187343) }
       }
     }
+    sub colors { (q{Catppuccin::Data::Macchiato::Color::Base},q{Catppuccin::Data::Macchiato::Color::Blue},q{Catppuccin::Data::Macchiato::Color::Crust},q{Catppuccin::Data::Macchiato::Color::Flamingo},q{Catppuccin::Data::Macchiato::Color::Green},q{Catppuccin::Data::Macchiato::Color::Lavender},q{Catppuccin::Data::Macchiato::Color::Mantle},q{Catppuccin::Data::Macchiato::Color::Maroon},q{Catppuccin::Data::Macchiato::Color::Mauve},q{Catppuccin::Data::Macchiato::Color::Overlay0},q{Catppuccin::Data::Macchiato::Color::Overlay1},q{Catppuccin::Data::Macchiato::Color::Overlay2},q{Catppuccin::Data::Macchiato::Color::Peach},q{Catppuccin::Data::Macchiato::Color::Pink},q{Catppuccin::Data::Macchiato::Color::Red},q{Catppuccin::Data::Macchiato::Color::Rosewater},q{Catppuccin::Data::Macchiato::Color::Sapphire},q{Catppuccin::Data::Macchiato::Color::Sky},q{Catppuccin::Data::Macchiato::Color::Subtext0},q{Catppuccin::Data::Macchiato::Color::Subtext1},q{Catppuccin::Data::Macchiato::Color::Surface0},q{Catppuccin::Data::Macchiato::Color::Surface1},q{Catppuccin::Data::Macchiato::Color::Surface2},q{Catppuccin::Data::Macchiato::Color::Teal},q{Catppuccin::Data::Macchiato::Color::Text},q{Catppuccin::Data::Macchiato::Color::Yellow}) }
     sub ansi { q{Catppuccin::Data::Macchiato::Ansi} }
     package Catppuccin::Data::Macchiato::Ansi {
       sub black { q{Catppuccin::Data::Macchiato::Ansi::Black} }
@@ -1476,6 +1481,7 @@ package Catppuccin::Data {
         }
       }
     }
+    sub ansi_colors { (q{Catppuccin::Data::Macchiato::Ansi::Black},q{Catppuccin::Data::Macchiato::Ansi::Blue},q{Catppuccin::Data::Macchiato::Ansi::Cyan},q{Catppuccin::Data::Macchiato::Ansi::Green},q{Catppuccin::Data::Macchiato::Ansi::Magenta},q{Catppuccin::Data::Macchiato::Ansi::Red},q{Catppuccin::Data::Macchiato::Ansi::White},q{Catppuccin::Data::Macchiato::Ansi::Yellow}) }
   }
   sub mocha { q{Catppuccin::Data::Mocha} }
   package Catppuccin::Data::Mocha {
@@ -1484,10 +1490,10 @@ package Catppuccin::Data {
     sub emoji { q{🌿} }
     sub order { 3 }
     sub dark { 1 }
-    sub colors { q{Catppuccin::Data::Mocha::Colors} }
-    package Catppuccin::Data::Mocha::Colors {
-      sub base { q{Catppuccin::Data::Mocha::Colors::Base} }
-      package Catppuccin::Data::Mocha::Colors::Base {
+    sub color { q{Catppuccin::Data::Mocha::Color} }
+    package Catppuccin::Data::Mocha::Color {
+      sub base { q{Catppuccin::Data::Mocha::Color::Base} }
+      package Catppuccin::Data::Mocha::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -1497,8 +1503,8 @@ package Catppuccin::Data {
         sub hsl { (240,0.210526315789474,0.149019607843137) }
         sub oklch { (0.242866941838384,0.0303573627594497,283.910970236414) }
       }
-      sub blue { q{Catppuccin::Data::Mocha::Colors::Blue} }
-      package Catppuccin::Data::Mocha::Colors::Blue {
+      sub blue { q{Catppuccin::Data::Mocha::Color::Blue} }
+      package Catppuccin::Data::Mocha::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -1508,8 +1514,8 @@ package Catppuccin::Data {
         sub hsl { (217.16814159292,0.91869918699187,0.758823529411765) }
         sub oklch { (0.766420361629136,0.111344266788129,259.88497602028) }
       }
-      sub crust { q{Catppuccin::Data::Mocha::Colors::Crust} }
-      package Catppuccin::Data::Mocha::Colors::Crust {
+      sub crust { q{Catppuccin::Data::Mocha::Color::Crust} }
+      package Catppuccin::Data::Mocha::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -1519,8 +1525,8 @@ package Catppuccin::Data {
         sub hsl { (240,0.227272727272727,0.0862745098039216) }
         sub oklch { (0.182782462004663,0.0203748444064281,284.203848390219) }
       }
-      sub flamingo { q{Catppuccin::Data::Mocha::Colors::Flamingo} }
-      package Catppuccin::Data::Mocha::Colors::Flamingo {
+      sub flamingo { q{Catppuccin::Data::Mocha::Color::Flamingo} }
+      package Catppuccin::Data::Mocha::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -1530,8 +1536,8 @@ package Catppuccin::Data {
         sub hsl { (0,0.587301587301587,0.876470588235294) }
         sub oklch { (0.879744246442704,0.0418125291234638,17.9750250524247) }
       }
-      sub green { q{Catppuccin::Data::Mocha::Colors::Green} }
-      package Catppuccin::Data::Mocha::Colors::Green {
+      sub green { q{Catppuccin::Data::Mocha::Color::Green} }
+      package Catppuccin::Data::Mocha::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -1541,8 +1547,8 @@ package Catppuccin::Data {
         sub hsl { (115.454545454545,0.540983606557377,0.76078431372549) }
         sub oklch { (0.857704223179352,0.109228579658491,142.715289015539) }
       }
-      sub lavender { q{Catppuccin::Data::Mocha::Colors::Lavender} }
-      package Catppuccin::Data::Mocha::Colors::Lavender {
+      sub lavender { q{Catppuccin::Data::Mocha::Color::Lavender} }
+      package Catppuccin::Data::Mocha::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -1552,8 +1558,8 @@ package Catppuccin::Data {
         sub hsl { (231.891891891892,0.973684210526316,0.850980392156863) }
         sub oklch { (0.816596007060097,0.0909518292192676,277.309242831416) }
       }
-      sub mantle { q{Catppuccin::Data::Mocha::Colors::Mantle} }
-      package Catppuccin::Data::Mocha::Colors::Mantle {
+      sub mantle { q{Catppuccin::Data::Mocha::Color::Mantle} }
+      package Catppuccin::Data::Mocha::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -1563,8 +1569,8 @@ package Catppuccin::Data {
         sub hsl { (240,0.213114754098361,0.119607843137255) }
         sub oklch { (0.215521607950062,0.0254168708991907,284.064699021933) }
       }
-      sub maroon { q{Catppuccin::Data::Mocha::Colors::Maroon} }
-      package Catppuccin::Data::Mocha::Colors::Maroon {
+      sub maroon { q{Catppuccin::Data::Mocha::Color::Maroon} }
+      package Catppuccin::Data::Mocha::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -1574,8 +1580,8 @@ package Catppuccin::Data {
         sub hsl { (350.4,0.652173913043478,0.774509803921569) }
         sub oklch { (0.782050201625379,0.0903299374799859,8.84816486600585) }
       }
-      sub mauve { q{Catppuccin::Data::Mocha::Colors::Mauve} }
-      package Catppuccin::Data::Mocha::Colors::Mauve {
+      sub mauve { q{Catppuccin::Data::Mocha::Color::Mauve} }
+      package Catppuccin::Data::Mocha::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -1585,8 +1591,8 @@ package Catppuccin::Data {
         sub hsl { (267.407407407407,0.835051546391753,0.809803921568627) }
         sub oklch { (0.787146252576066,0.118670111359866,304.769304376724) }
       }
-      sub overlay0 { q{Catppuccin::Data::Mocha::Colors::Overlay0} }
-      package Catppuccin::Data::Mocha::Colors::Overlay0 {
+      sub overlay0 { q{Catppuccin::Data::Mocha::Color::Overlay0} }
+      package Catppuccin::Data::Mocha::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -1596,8 +1602,8 @@ package Catppuccin::Data {
         sub hsl { (230.769230769231,0.107438016528926,0.474509803921569) }
         sub oklch { (0.549691183767789,0.0344939082700212,277.095074605861) }
       }
-      sub overlay1 { q{Catppuccin::Data::Mocha::Colors::Overlay1} }
-      package Catppuccin::Data::Mocha::Colors::Overlay1 {
+      sub overlay1 { q{Catppuccin::Data::Mocha::Color::Overlay1} }
+      package Catppuccin::Data::Mocha::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -1607,8 +1613,8 @@ package Catppuccin::Data {
         sub hsl { (229.655172413793,0.127753303964758,0.554901960784314) }
         sub oklch { (0.617567151018584,0.0366697431688593,276.0047079409) }
       }
-      sub overlay2 { q{Catppuccin::Data::Mocha::Colors::Overlay2} }
-      package Catppuccin::Data::Mocha::Colors::Overlay2 {
+      sub overlay2 { q{Catppuccin::Data::Mocha::Color::Overlay2} }
+      package Catppuccin::Data::Mocha::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -1618,8 +1624,8 @@ package Catppuccin::Data {
         sub hsl { (228.387096774194,0.167567567567568,0.637254901960784) }
         sub oklch { (0.686520743055446,0.0373548963157601,274.7252765055) }
       }
-      sub peach { q{Catppuccin::Data::Mocha::Colors::Peach} }
-      package Catppuccin::Data::Mocha::Colors::Peach {
+      sub peach { q{Catppuccin::Data::Mocha::Color::Peach} }
+      package Catppuccin::Data::Mocha::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -1629,8 +1635,8 @@ package Catppuccin::Data {
         sub hsl { (22.9565217391304,0.92,0.754901960784314) }
         sub oklch { (0.823678233730965,0.101460341547387,52.6294168619111) }
       }
-      sub pink { q{Catppuccin::Data::Mocha::Colors::Pink} }
-      package Catppuccin::Data::Mocha::Colors::Pink {
+      sub pink { q{Catppuccin::Data::Mocha::Color::Pink} }
+      package Catppuccin::Data::Mocha::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -1640,8 +1646,8 @@ package Catppuccin::Data {
         sub hsl { (316.470588235294,0.71830985915493,0.86078431372549) }
         sub oklch { (0.870032607058557,0.0751577539668794,336.304084551999) }
       }
-      sub red { q{Catppuccin::Data::Mocha::Colors::Red} }
-      package Catppuccin::Data::Mocha::Colors::Red {
+      sub red { q{Catppuccin::Data::Mocha::Color::Red} }
+      package Catppuccin::Data::Mocha::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -1651,8 +1657,8 @@ package Catppuccin::Data {
         sub hsl { (343.269230769231,0.8125,0.749019607843137) }
         sub oklch { (0.755592011161043,0.129702142513949,2.76416484470991) }
       }
-      sub rosewater { q{Catppuccin::Data::Mocha::Colors::Rosewater} }
-      package Catppuccin::Data::Mocha::Colors::Rosewater {
+      sub rosewater { q{Catppuccin::Data::Mocha::Color::Rosewater} }
+      package Catppuccin::Data::Mocha::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -1662,8 +1668,8 @@ package Catppuccin::Data {
         sub hsl { (9.59999999999997,0.555555555555556,0.911764705882353) }
         sub oklch { (0.922570149778013,0.0238348119741779,30.4918552599891) }
       }
-      sub sapphire { q{Catppuccin::Data::Mocha::Colors::Sapphire} }
-      package Catppuccin::Data::Mocha::Colors::Sapphire {
+      sub sapphire { q{Catppuccin::Data::Mocha::Color::Sapphire} }
+      package Catppuccin::Data::Mocha::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -1673,8 +1679,8 @@ package Catppuccin::Data {
         sub hsl { (198.5,0.759493670886076,0.690196078431373) }
         sub oklch { (0.790649687529011,0.0964903996003699,228.652678915858) }
       }
-      sub sky { q{Catppuccin::Data::Mocha::Colors::Sky} }
-      package Catppuccin::Data::Mocha::Colors::Sky {
+      sub sky { q{Catppuccin::Data::Mocha::Color::Sky} }
+      package Catppuccin::Data::Mocha::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -1684,8 +1690,8 @@ package Catppuccin::Data {
         sub hsl { (189.183673469388,0.710144927536232,0.729411764705882) }
         sub oklch { (0.846711391372848,0.0833360810088085,210.254541480976) }
       }
-      sub subtext0 { q{Catppuccin::Data::Mocha::Colors::Subtext0} }
-      package Catppuccin::Data::Mocha::Colors::Subtext0 {
+      sub subtext0 { q{Catppuccin::Data::Mocha::Color::Subtext0} }
+      package Catppuccin::Data::Mocha::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -1695,8 +1701,8 @@ package Catppuccin::Data {
         sub hsl { (227.647058823529,0.236111111111111,0.717647058823529) }
         sub oklch { (0.750960547260553,0.0395649859617788,273.931990372704) }
       }
-      sub subtext1 { q{Catppuccin::Data::Mocha::Colors::Subtext1} }
-      package Catppuccin::Data::Mocha::Colors::Subtext1 {
+      sub subtext1 { q{Catppuccin::Data::Mocha::Color::Subtext1} }
+      package Catppuccin::Data::Mocha::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -1706,8 +1712,8 @@ package Catppuccin::Data {
         sub hsl { (226.666666666667,0.352941176470588,0.8) }
         sub oklch { (0.816822778747893,0.0403445646844379,272.862189336409) }
       }
-      sub surface0 { q{Catppuccin::Data::Mocha::Colors::Surface0} }
-      package Catppuccin::Data::Mocha::Colors::Surface0 {
+      sub surface0 { q{Catppuccin::Data::Mocha::Color::Surface0} }
+      package Catppuccin::Data::Mocha::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -1717,8 +1723,8 @@ package Catppuccin::Data {
         sub hsl { (236.842105263158,0.162393162393162,0.229411764705882) }
         sub oklch { (0.324021887446302,0.0318845523939924,281.978441741265) }
       }
-      sub surface1 { q{Catppuccin::Data::Mocha::Colors::Surface1} }
-      package Catppuccin::Data::Mocha::Colors::Surface1 {
+      sub surface1 { q{Catppuccin::Data::Mocha::Color::Surface1} }
+      package Catppuccin::Data::Mocha::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -1728,8 +1734,8 @@ package Catppuccin::Data {
         sub hsl { (234.285714285714,0.132075471698113,0.311764705882353) }
         sub oklch { (0.403691419694441,0.0319546413282236,280.152003607294) }
       }
-      sub surface2 { q{Catppuccin::Data::Mocha::Colors::Surface2} }
-      package Catppuccin::Data::Mocha::Colors::Surface2 {
+      sub surface2 { q{Catppuccin::Data::Mocha::Color::Surface2} }
+      package Catppuccin::Data::Mocha::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -1739,8 +1745,8 @@ package Catppuccin::Data {
         sub hsl { (232.5,0.12,0.392156862745098) }
         sub oklch { (0.476506466663872,0.0339935404420057,278.643039748306) }
       }
-      sub teal { q{Catppuccin::Data::Mocha::Colors::Teal} }
-      package Catppuccin::Data::Mocha::Colors::Teal {
+      sub teal { q{Catppuccin::Data::Mocha::Color::Teal} }
+      package Catppuccin::Data::Mocha::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -1750,8 +1756,8 @@ package Catppuccin::Data {
         sub hsl { (170,0.573529411764706,0.733333333333333) }
         sub oklch { (0.858489039899321,0.0792067005209004,182.74951302555) }
       }
-      sub text { q{Catppuccin::Data::Mocha::Colors::Text} }
-      package Catppuccin::Data::Mocha::Colors::Text {
+      sub text { q{Catppuccin::Data::Mocha::Color::Text} }
+      package Catppuccin::Data::Mocha::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -1761,8 +1767,8 @@ package Catppuccin::Data {
         sub hsl { (226.153846153846,0.639344262295082,0.880392156862745) }
         sub oklch { (0.878660079347372,0.0425519990351719,272.276737841537) }
       }
-      sub yellow { q{Catppuccin::Data::Mocha::Colors::Yellow} }
-      package Catppuccin::Data::Mocha::Colors::Yellow {
+      sub yellow { q{Catppuccin::Data::Mocha::Color::Yellow} }
+      package Catppuccin::Data::Mocha::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -1773,6 +1779,7 @@ package Catppuccin::Data {
         sub oklch { (0.919302853821224,0.070414627194939,86.528082232724) }
       }
     }
+    sub colors { (q{Catppuccin::Data::Mocha::Color::Base},q{Catppuccin::Data::Mocha::Color::Blue},q{Catppuccin::Data::Mocha::Color::Crust},q{Catppuccin::Data::Mocha::Color::Flamingo},q{Catppuccin::Data::Mocha::Color::Green},q{Catppuccin::Data::Mocha::Color::Lavender},q{Catppuccin::Data::Mocha::Color::Mantle},q{Catppuccin::Data::Mocha::Color::Maroon},q{Catppuccin::Data::Mocha::Color::Mauve},q{Catppuccin::Data::Mocha::Color::Overlay0},q{Catppuccin::Data::Mocha::Color::Overlay1},q{Catppuccin::Data::Mocha::Color::Overlay2},q{Catppuccin::Data::Mocha::Color::Peach},q{Catppuccin::Data::Mocha::Color::Pink},q{Catppuccin::Data::Mocha::Color::Red},q{Catppuccin::Data::Mocha::Color::Rosewater},q{Catppuccin::Data::Mocha::Color::Sapphire},q{Catppuccin::Data::Mocha::Color::Sky},q{Catppuccin::Data::Mocha::Color::Subtext0},q{Catppuccin::Data::Mocha::Color::Subtext1},q{Catppuccin::Data::Mocha::Color::Surface0},q{Catppuccin::Data::Mocha::Color::Surface1},q{Catppuccin::Data::Mocha::Color::Surface2},q{Catppuccin::Data::Mocha::Color::Teal},q{Catppuccin::Data::Mocha::Color::Text},q{Catppuccin::Data::Mocha::Color::Yellow}) }
     sub ansi { q{Catppuccin::Data::Mocha::Ansi} }
     package Catppuccin::Data::Mocha::Ansi {
       sub black { q{Catppuccin::Data::Mocha::Ansi::Black} }
@@ -1968,6 +1975,8 @@ package Catppuccin::Data {
         }
       }
     }
+    sub ansi_colors { (q{Catppuccin::Data::Mocha::Ansi::Black},q{Catppuccin::Data::Mocha::Ansi::Blue},q{Catppuccin::Data::Mocha::Ansi::Cyan},q{Catppuccin::Data::Mocha::Ansi::Green},q{Catppuccin::Data::Mocha::Ansi::Magenta},q{Catppuccin::Data::Mocha::Ansi::Red},q{Catppuccin::Data::Mocha::Ansi::White},q{Catppuccin::Data::Mocha::Ansi::Yellow}) }
   }
+  sub flavors { (q{Catppuccin::Data::Frappe},q{Catppuccin::Data::Latte},q{Catppuccin::Data::Macchiato},q{Catppuccin::Data::Mocha}) }
 }
 1;

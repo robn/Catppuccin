@@ -16,7 +16,9 @@ say 'use utf8;';
 emit_package(undef, 'Catppuccin::Data', sub ($st) {
   emit_sub_str($st, version => delete $data->{version});
 
-  for my $flavor (sort keys %$data) {
+  my @flavors = sort keys %$data;
+
+  for my $flavor (@flavors) {
     emit_package($st, $flavor, sub ($st) {
       my $data = $data->{$flavor};
 
@@ -26,7 +28,7 @@ emit_package(undef, 'Catppuccin::Data', sub ($st) {
       emit_sub_num($st, order => $data->{order});
       emit_sub_bool($st, dark => $data->{dark});
 
-      emit_package($st, 'colors', sub ($st) {
+      emit_package($st, 'color', sub ($st) {
         my $colors = $data->{colors};
         for my $color (sort keys %$colors) {
           my $data = $colors->{$color};
@@ -44,6 +46,7 @@ emit_package(undef, 'Catppuccin::Data', sub ($st) {
           });
         }
       });
+      emit_last_package_list($st, 'colors');
 
       emit_package($st, 'ansi', sub ($st) {
         my $colors = $data->{ansiColors};
@@ -81,21 +84,27 @@ emit_package(undef, 'Catppuccin::Data', sub ($st) {
           });
         }
       });
+      emit_last_package_list($st, 'ansi_colors');
     });
   }
+
+  emit_package_list($st, 'flavors');
 });
 
 say '1;';
 
 sub emit_package ($st, $name, $cb) {
   if ($st) {
-    push $st->{stack}->@*, $st->{pkg};
+    push $st->{stack}->@*, [$st->{pkg}, $st->{subpkgs}];
     $st->{pkg} = $st->{pkg}.'::'.ucfirst($name);
+    push $st->{subpkgs}->@*, $st->{pkg};
+    $st->{subpkgs} = [];
     emit_sub_str($st, $name, $st->{pkg});
   } else {
     $st = {
       stack => [],
       pkg => ucfirst($name),
+      subpkgs => [],
       indent => '',
     };
   }
@@ -106,9 +115,17 @@ sub emit_package ($st, $name, $cb) {
   $st->{indent} = '  ' x $st->{stack}->@*;
   emit_indent($st, '}');
 
+  $st->{last} = $st->{subpkgs};
   if ($st->{stack}->@*) {
-    $st->{pkg} = pop $st->{stack}->@*;
+    ($st->{pkg}, $st->{subpkgs}) = (pop $st->{stack}->@*)->@*;
   }
+}
+
+sub emit_last_package_list ($st, $name) {
+  emit_sub_str_list($st, $name, $st->{last}->@*);
+}
+sub emit_package_list ($st, $name) {
+  emit_sub_str_list($st, $name, $st->{subpkgs}->@*);
 }
 
 sub emit_indent ($st, $str) {
@@ -117,6 +134,10 @@ sub emit_indent ($st, $str) {
 
 sub emit_sub_str ($st, $sub, $str) {
   emit_indent($st, 'sub '.$sub.' { q{'.$str.'} }');
+}
+
+sub emit_sub_str_list ($st, $sub, @str) {
+  emit_indent($st, 'sub '.$sub.' { ('.join(',', map { 'q{'.$_.'}' } @str).') }');
 }
 
 sub emit_sub_num ($st, $sub, $num) {

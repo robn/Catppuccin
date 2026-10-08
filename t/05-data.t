@@ -16,21 +16,21 @@ my $latte = Catppuccin::Data->latte;
 is($latte->id, 'latte');
 is($latte->name, 'Latte');
 
-my $color = $latte->color;
-is($color->crust->id, 'crust');
-is($color->lavender->name, 'Lavender');
-is($color->maroon->hex, '#e64553');
-is_deeply([$color->peach->rgb], [254,100,11]);
-is(scalar [$color->rosewater->hsl]->@*, 3);
-is(scalar [$color->sky->oklch]->@*, 3);
+my $c = $latte->color;
+is($c->crust->id, 'crust');
+is($c->lavender->name, 'Lavender');
+is($c->maroon->hex, '#e64553');
+is_deeply([$c->peach->rgb], [254,100,11]);
+is(scalar [$c->rosewater->hsl]->@*, 3);
+is(scalar [$c->sky->oklch]->@*, 3);
 
-my $ansi = $latte->ansi;
-is($ansi->blue->id, 'blue');
-is($ansi->cyan->name, 'Cyan');
-is($ansi->green->normal->name, 'Green');
-is($ansi->green->bright->name, 'Bright Green');
-is($ansi->yellow->bright->hex, '#eea02d');
-is_deeply([$ansi->magenta->normal->rgb], [234,118,203]);
+my $a = $latte->ansi;
+is($a->blue->id, 'blue');
+is($a->cyan->name, 'Cyan');
+is($a->green->normal->name, 'Green');
+is($a->green->bright->name, 'Bright Green');
+is($a->yellow->bright->hex, '#eea02d');
+is_deeply([$a->magenta->normal->rgb], [234,118,203]);
 
 my ($flavor) = Catppuccin::Data->flavors;
 is($flavor->id, do { my $id = $flavor->id; Catppuccin::Data->$id }->id);

@@ -8,38 +8,43 @@ use strict;
 use Catppuccin::Data;
 
 BEGIN {
+  my @flavors;
+
   for my $flavor (Catppuccin::Data->flavors) {
+    push @flavors, $flavor->id;
     no strict 'refs';
     *{'Catppuccin::'.$flavor->id} = sub {
       bless \do { $flavor }, 'Catppuccin::Flavor';
     }
   }
+
+  sub flavors { @flavors };
 }
 
 package Catppuccin::Flavor;
 
 sub hex {
-  bless [${shift @_}->color, 'hex'], 'Catppuccin::Palette';
+  bless [${shift @_}, 'hex'], 'Catppuccin::Palette::Color';
 }
 sub rgb {
-  bless [${shift @_}->color, 'rgb'], 'Catppuccin::Palette';
+  bless [${shift @_}, 'rgb'], 'Catppuccin::Palette::Color';
 }
 sub hsl {
-  bless [${shift @_}->color, 'hsl'], 'Catppuccin::Palette';
+  bless [${shift @_}, 'hsl'], 'Catppuccin::Palette::Color';
 }
 sub oklch {
-  bless [${shift @_}->color, 'oklch'], 'Catppuccin::Palette';
+  bless [${shift @_}, 'oklch'], 'Catppuccin::Palette::Color';
 }
 
 sub term_rgb {
-  bless [${shift @_}->color, sub {
+  bless [${shift @_}, sub {
     sprintf 'rgb%u%u%u', map { $_ % 6 } shift->rgb
-  }], 'Catppuccin::Palette';
+  }], 'Catppuccin::Palette::Color';
 }
 sub term_truecolor {
-  bless [${shift @_}->color, sub {
+  bless [${shift @_}, sub {
     sprintf 'r%ug%ub%u', shift->rgb
-  }], 'Catppuccin::Palette';
+  }], 'Catppuccin::Palette::Color';
 }
 
 sub term {
@@ -47,13 +52,19 @@ sub term {
   shift->term_truecolor : shift->term_rgb
 }
 
-package Catppuccin::Palette;
+package Catppuccin::Palette::Color;
 
 sub AUTOLOAD {
   our $AUTOLOAD;
   my ($color) = $AUTOLOAD =~ m/::([^:]+)$/;
   my ($class, $format) = @{shift @_};
-  ref $format ? $format->($class->$color) : $class->$color->$format;
+  ref $format ? $format->($class->color->$color) : $class->color->$color->$format;
+}
+
+sub id { shift->[0]->id }
+
+sub colors {
+  map { $_->id } shift->[0]->colors;
 }
 
 sub DESTROY {}

@@ -7,7 +7,7 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "\x{1f638} Soothing pastel theme for the high-spirited!",
+  "ABSTRACT" => "Soothing pastel theme for the high-spirited!",
   "AUTHOR" => "Rob Norris <robn\@despairlabs.com>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0

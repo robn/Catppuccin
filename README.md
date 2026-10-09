@@ -1,6 +1,6 @@
 # NAME
 
-Catppuccin - 😸 Soothing pastel theme for the high-spirited!
+Catppuccin - Soothing pastel theme for the high-spirited!
 
 # SYNOPSIS
 

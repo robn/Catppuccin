@@ -1,6 +1,6 @@
 package Catppuccin;
 
-# ABSTRACT: 😸 Soothing pastel theme for the high-spirited!
+# ABSTRACT: Soothing pastel theme for the high-spirited!
 
 use warnings;
 use strict;
@@ -80,7 +80,7 @@ __END__
 
 =head1 NAME
 
-Catppuccin - 😸 Soothing pastel theme for the high-spirited!
+Catppuccin - Soothing pastel theme for the high-spirited!
 
 =head1 SYNOPSIS
 

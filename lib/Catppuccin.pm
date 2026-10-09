@@ -21,7 +21,8 @@ BEGIN {
   sub flavors { @flavors };
 }
 
-package Catppuccin::Flavor;
+package # hide from PAUSE
+ Catppuccin::Flavor;
 
 sub hex {
   bless [${shift @_}, 'hex'], 'Catppuccin::Palette::Color';
@@ -52,7 +53,8 @@ sub term {
   shift->term_truecolor : shift->term_rgb
 }
 
-package Catppuccin::Palette::Color;
+package # hide from PAUSE
+ Catppuccin::Palette::Color;
 
 sub AUTOLOAD {
   our $AUTOLOAD;

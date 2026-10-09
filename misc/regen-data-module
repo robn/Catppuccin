@@ -11,6 +11,7 @@ my $res = HTTP::Tiny->new->get(
 die "E: $res->{content}" unless $res->{success};
 my $data = decode_json($res->{content});
 
+say '# generated data package. do not use directly!';
 say 'use warnings;';
 say 'use strict;';
 say 'use utf8;';
@@ -117,7 +118,7 @@ sub emit_package ($st, $name, $cb) {
     };
   }
 
-  emit_indent($st, 'package '.$st->{pkg}.' {');
+  emit_package_header($st);
   $st->{indent} = '  ' x ($st->{stack}->@* + 1);
   $cb->($st);
   $st->{indent} = '  ' x $st->{stack}->@*;
@@ -127,6 +128,11 @@ sub emit_package ($st, $name, $cb) {
   if ($st->{stack}->@*) {
     ($st->{pkg}, $st->{subpkgs}) = (pop $st->{stack}->@*)->@*;
   }
+}
+
+sub emit_package_header ($st) {
+  emit_indent($st, 'package # hide from PAUSE');
+  emit_indent($st, ' '.$st->{pkg}.' {');
 }
 
 sub emit_last_package_list ($st, $name) {

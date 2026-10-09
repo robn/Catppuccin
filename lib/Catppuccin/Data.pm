@@ -1,19 +1,24 @@
+# generated data package. do not use directly!
 use warnings;
 use strict;
 use utf8;
-package Catppuccin::Data {
+package # hide from PAUSE
+ Catppuccin::Data {
   sub version { q{1.8.0} }
   sub latte { q{Catppuccin::Data::Latte} }
-  package Catppuccin::Data::Latte {
+  package # hide from PAUSE
+   Catppuccin::Data::Latte {
     sub id { q{latte} }
     sub name { q{Latte} }
     sub emoji { q{🌻} }
     sub order { 0 }
     sub dark { 0 }
     sub color { q{Catppuccin::Data::Latte::Color} }
-    package Catppuccin::Data::Latte::Color {
+    package # hide from PAUSE
+     Catppuccin::Data::Latte::Color {
       sub rosewater { q{Catppuccin::Data::Latte::Color::Rosewater} }
-      package Catppuccin::Data::Latte::Color::Rosewater {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -24,7 +29,8 @@ package Catppuccin::Data {
         sub oklch { (0.714133417743932,0.104543081319015,33.0967197215932) }
       }
       sub flamingo { q{Catppuccin::Data::Latte::Color::Flamingo} }
-      package Catppuccin::Data::Latte::Color::Flamingo {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -35,7 +41,8 @@ package Catppuccin::Data {
         sub oklch { (0.685640085534859,0.125940489430368,20.86703533423) }
       }
       sub pink { q{Catppuccin::Data::Latte::Color::Pink} }
-      package Catppuccin::Data::Latte::Color::Pink {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -46,7 +53,8 @@ package Catppuccin::Data {
         sub oklch { (0.725559731342951,0.173932645626025,338.433342858689) }
       }
       sub mauve { q{Catppuccin::Data::Latte::Color::Mauve} }
-      package Catppuccin::Data::Latte::Color::Mauve {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -57,7 +65,8 @@ package Catppuccin::Data {
         sub oklch { (0.554669848375687,0.25034607990295,297.01564835005) }
       }
       sub red { q{Catppuccin::Data::Latte::Color::Red} }
-      package Catppuccin::Data::Latte::Color::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -68,7 +77,8 @@ package Catppuccin::Data {
         sub oklch { (0.550474414253923,0.215514307601958,19.8094640441604) }
       }
       sub maroon { q{Catppuccin::Data::Latte::Color::Maroon} }
-      package Catppuccin::Data::Latte::Color::Maroon {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -79,7 +89,8 @@ package Catppuccin::Data {
         sub oklch { (0.625200580487491,0.19674637699386,20.2723807529374) }
       }
       sub peach { q{Catppuccin::Data::Latte::Color::Peach} }
-      package Catppuccin::Data::Latte::Color::Peach {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -90,7 +101,8 @@ package Catppuccin::Data {
         sub oklch { (0.691976643336316,0.204051567585273,42.4292658007281) }
       }
       sub yellow { q{Catppuccin::Data::Latte::Color::Yellow} }
-      package Catppuccin::Data::Latte::Color::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -101,7 +113,8 @@ package Catppuccin::Data {
         sub oklch { (0.71399173095047,0.149441640806842,67.7766553475321) }
       }
       sub green { q{Catppuccin::Data::Latte::Color::Green} }
-      package Catppuccin::Data::Latte::Color::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -112,7 +125,8 @@ package Catppuccin::Data {
         sub oklch { (0.625044390429536,0.177158161087621,140.444837591426) }
       }
       sub teal { q{Catppuccin::Data::Latte::Color::Teal} }
-      package Catppuccin::Data::Latte::Color::Teal {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -123,7 +137,8 @@ package Catppuccin::Data {
         sub oklch { (0.602268968448023,0.0981149578923705,201.104748377215) }
       }
       sub sky { q{Catppuccin::Data::Latte::Color::Sky} }
-      package Catppuccin::Data::Latte::Color::Sky {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -134,7 +149,8 @@ package Catppuccin::Data {
         sub oklch { (0.682019672741545,0.144818939505262,235.382218764632) }
       }
       sub sapphire { q{Catppuccin::Data::Latte::Color::Sapphire} }
-      package Catppuccin::Data::Latte::Color::Sapphire {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -145,7 +161,8 @@ package Catppuccin::Data {
         sub oklch { (0.647744360254855,0.106768525479533,212.889280559808) }
       }
       sub blue { q{Catppuccin::Data::Latte::Color::Blue} }
-      package Catppuccin::Data::Latte::Color::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -156,7 +173,8 @@ package Catppuccin::Data {
         sub oklch { (0.558616851915744,0.225502522656889,262.086650560498) }
       }
       sub lavender { q{Catppuccin::Data::Latte::Color::Lavender} }
-      package Catppuccin::Data::Latte::Color::Lavender {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -167,7 +185,8 @@ package Catppuccin::Data {
         sub oklch { (0.663762899534403,0.175103303546464,273.134603506708) }
       }
       sub text { q{Catppuccin::Data::Latte::Color::Text} }
-      package Catppuccin::Data::Latte::Color::Text {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -178,7 +197,8 @@ package Catppuccin::Data {
         sub oklch { (0.435469628091424,0.0430079579048629,279.325020951234) }
       }
       sub subtext1 { q{Catppuccin::Data::Latte::Color::Subtext1} }
-      package Catppuccin::Data::Latte::Color::Subtext1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -189,7 +209,8 @@ package Catppuccin::Data {
         sub oklch { (0.492002787767345,0.0384905025337914,279.299160578886) }
       }
       sub subtext0 { q{Catppuccin::Data::Latte::Color::Subtext0} }
-      package Catppuccin::Data::Latte::Color::Subtext0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -200,7 +221,8 @@ package Catppuccin::Data {
         sub oklch { (0.547077637967648,0.0343427883752853,279.083697115318) }
       }
       sub overlay2 { q{Catppuccin::Data::Latte::Color::Overlay2} }
-      package Catppuccin::Data::Latte::Color::Overlay2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -211,7 +233,8 @@ package Catppuccin::Data {
         sub oklch { (0.600878139059423,0.0304904641622693,278.694364334887) }
       }
       sub overlay1 { q{Catppuccin::Data::Latte::Color::Overlay1} }
-      package Catppuccin::Data::Latte::Color::Overlay1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -222,7 +245,8 @@ package Catppuccin::Data {
         sub oklch { (0.653553629049302,0.0268787707712986,278.120815963121) }
       }
       sub overlay0 { q{Catppuccin::Data::Latte::Color::Overlay0} }
-      package Catppuccin::Data::Latte::Color::Overlay0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -233,7 +257,8 @@ package Catppuccin::Data {
         sub oklch { (0.707668458494878,0.023669865614292,274.600834871712) }
       }
       sub surface2 { q{Catppuccin::Data::Latte::Color::Surface2} }
-      package Catppuccin::Data::Latte::Color::Surface2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -244,7 +269,8 @@ package Catppuccin::Data {
         sub oklch { (0.758394352158996,0.0204534402415715,273.153552246035) }
       }
       sub surface1 { q{Catppuccin::Data::Latte::Color::Surface1} }
-      package Catppuccin::Data::Latte::Color::Surface1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -255,7 +281,8 @@ package Catppuccin::Data {
         sub oklch { (0.808307011018275,0.0173933088086153,271.19815543179) }
       }
       sub surface0 { q{Catppuccin::Data::Latte::Color::Surface0} }
-      package Catppuccin::Data::Latte::Color::Surface0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -266,7 +293,8 @@ package Catppuccin::Data {
         sub oklch { (0.857477084820498,0.0144799844364945,268.475591718479) }
       }
       sub base { q{Catppuccin::Data::Latte::Color::Base} }
-      package Catppuccin::Data::Latte::Color::Base {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -277,7 +305,8 @@ package Catppuccin::Data {
         sub oklch { (0.957760887076093,0.00576680241031033,264.532151644555) }
       }
       sub mantle { q{Catppuccin::Data::Latte::Color::Mantle} }
-      package Catppuccin::Data::Latte::Color::Mantle {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -288,7 +317,8 @@ package Catppuccin::Data {
         sub oklch { (0.933459332410928,0.00871379906203183,264.520602235341) }
       }
       sub crust { q{Catppuccin::Data::Latte::Color::Crust} }
-      package Catppuccin::Data::Latte::Color::Crust {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -301,14 +331,17 @@ package Catppuccin::Data {
     }
     sub colors { (q{Catppuccin::Data::Latte::Color::Rosewater},q{Catppuccin::Data::Latte::Color::Flamingo},q{Catppuccin::Data::Latte::Color::Pink},q{Catppuccin::Data::Latte::Color::Mauve},q{Catppuccin::Data::Latte::Color::Red},q{Catppuccin::Data::Latte::Color::Maroon},q{Catppuccin::Data::Latte::Color::Peach},q{Catppuccin::Data::Latte::Color::Yellow},q{Catppuccin::Data::Latte::Color::Green},q{Catppuccin::Data::Latte::Color::Teal},q{Catppuccin::Data::Latte::Color::Sky},q{Catppuccin::Data::Latte::Color::Sapphire},q{Catppuccin::Data::Latte::Color::Blue},q{Catppuccin::Data::Latte::Color::Lavender},q{Catppuccin::Data::Latte::Color::Text},q{Catppuccin::Data::Latte::Color::Subtext1},q{Catppuccin::Data::Latte::Color::Subtext0},q{Catppuccin::Data::Latte::Color::Overlay2},q{Catppuccin::Data::Latte::Color::Overlay1},q{Catppuccin::Data::Latte::Color::Overlay0},q{Catppuccin::Data::Latte::Color::Surface2},q{Catppuccin::Data::Latte::Color::Surface1},q{Catppuccin::Data::Latte::Color::Surface0},q{Catppuccin::Data::Latte::Color::Base},q{Catppuccin::Data::Latte::Color::Mantle},q{Catppuccin::Data::Latte::Color::Crust}) }
     sub ansi { q{Catppuccin::Data::Latte::Ansi} }
-    package Catppuccin::Data::Latte::Ansi {
+    package # hide from PAUSE
+     Catppuccin::Data::Latte::Ansi {
       sub black { q{Catppuccin::Data::Latte::Ansi::Black} }
-      package Catppuccin::Data::Latte::Ansi::Black {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Black {
         sub id { q{black} }
         sub name { q{Black} }
         sub order { 0 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Black::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Black::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Black::Normal {
           sub name { q{Black} }
           sub code { 0 }
           sub hex { q{#5c5f77} }
@@ -317,7 +350,8 @@ package Catppuccin::Data {
           sub oklch { (0.492002787767345,0.0384905025337914,279.299160578886) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Black::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Black::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Black::Bright {
           sub name { q{Bright Black} }
           sub code { 8 }
           sub hex { q{#6c6f85} }
@@ -327,12 +361,14 @@ package Catppuccin::Data {
         }
       }
       sub red { q{Catppuccin::Data::Latte::Ansi::Red} }
-      package Catppuccin::Data::Latte::Ansi::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 1 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Red::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Red::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Red::Normal {
           sub name { q{Red} }
           sub code { 1 }
           sub hex { q{#d20f39} }
@@ -341,7 +377,8 @@ package Catppuccin::Data {
           sub oklch { (0.550474414253923,0.215514307601958,19.8094640441604) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Red::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Red::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Red::Bright {
           sub name { q{Bright Red} }
           sub code { 9 }
           sub hex { q{#de293e} }
@@ -351,12 +388,14 @@ package Catppuccin::Data {
         }
       }
       sub green { q{Catppuccin::Data::Latte::Ansi::Green} }
-      package Catppuccin::Data::Latte::Ansi::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 2 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Green::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Green::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Green::Normal {
           sub name { q{Green} }
           sub code { 2 }
           sub hex { q{#40a02b} }
@@ -365,7 +404,8 @@ package Catppuccin::Data {
           sub oklch { (0.625044390429536,0.177158161087621,140.444837591426) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Green::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Green::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Green::Bright {
           sub name { q{Bright Green} }
           sub code { 10 }
           sub hex { q{#49af3d} }
@@ -375,12 +415,14 @@ package Catppuccin::Data {
         }
       }
       sub yellow { q{Catppuccin::Data::Latte::Ansi::Yellow} }
-      package Catppuccin::Data::Latte::Ansi::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 3 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Yellow::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Yellow::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Yellow::Normal {
           sub name { q{Yellow} }
           sub code { 3 }
           sub hex { q{#df8e1d} }
@@ -389,7 +431,8 @@ package Catppuccin::Data {
           sub oklch { (0.71399173095047,0.149441640806842,67.7766553475321) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Yellow::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Yellow::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Yellow::Bright {
           sub name { q{Bright Yellow} }
           sub code { 11 }
           sub hex { q{#eea02d} }
@@ -399,12 +442,14 @@ package Catppuccin::Data {
         }
       }
       sub blue { q{Catppuccin::Data::Latte::Ansi::Blue} }
-      package Catppuccin::Data::Latte::Ansi::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 4 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Blue::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Blue::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Blue::Normal {
           sub name { q{Blue} }
           sub code { 4 }
           sub hex { q{#1e66f5} }
@@ -413,7 +458,8 @@ package Catppuccin::Data {
           sub oklch { (0.558616851915744,0.225502522656889,262.086650560498) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Blue::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Blue::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Blue::Bright {
           sub name { q{Bright Blue} }
           sub code { 12 }
           sub hex { q{#456eff} }
@@ -423,12 +469,14 @@ package Catppuccin::Data {
         }
       }
       sub magenta { q{Catppuccin::Data::Latte::Ansi::Magenta} }
-      package Catppuccin::Data::Latte::Ansi::Magenta {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Magenta {
         sub id { q{magenta} }
         sub name { q{Magenta} }
         sub order { 5 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Magenta::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Magenta::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Magenta::Normal {
           sub name { q{Magenta} }
           sub code { 5 }
           sub hex { q{#ea76cb} }
@@ -437,7 +485,8 @@ package Catppuccin::Data {
           sub oklch { (0.725559731342951,0.173932645626025,338.433342858689) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Magenta::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Magenta::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Magenta::Bright {
           sub name { q{Bright Magenta} }
           sub code { 13 }
           sub hex { q{#fe85d8} }
@@ -447,12 +496,14 @@ package Catppuccin::Data {
         }
       }
       sub cyan { q{Catppuccin::Data::Latte::Ansi::Cyan} }
-      package Catppuccin::Data::Latte::Ansi::Cyan {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::Cyan {
         sub id { q{cyan} }
         sub name { q{Cyan} }
         sub order { 6 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::Cyan::Normal} }
-        package Catppuccin::Data::Latte::Ansi::Cyan::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Cyan::Normal {
           sub name { q{Cyan} }
           sub code { 6 }
           sub hex { q{#179299} }
@@ -461,7 +512,8 @@ package Catppuccin::Data {
           sub oklch { (0.602268968448023,0.0981149578923705,201.104748377215) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::Cyan::Bright} }
-        package Catppuccin::Data::Latte::Ansi::Cyan::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::Cyan::Bright {
           sub name { q{Bright Cyan} }
           sub code { 14 }
           sub hex { q{#2d9fa8} }
@@ -471,12 +523,14 @@ package Catppuccin::Data {
         }
       }
       sub white { q{Catppuccin::Data::Latte::Ansi::White} }
-      package Catppuccin::Data::Latte::Ansi::White {
+      package # hide from PAUSE
+       Catppuccin::Data::Latte::Ansi::White {
         sub id { q{white} }
         sub name { q{White} }
         sub order { 7 }
         sub normal { q{Catppuccin::Data::Latte::Ansi::White::Normal} }
-        package Catppuccin::Data::Latte::Ansi::White::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::White::Normal {
           sub name { q{White} }
           sub code { 7 }
           sub hex { q{#acb0be} }
@@ -485,7 +539,8 @@ package Catppuccin::Data {
           sub oklch { (0.758394352158996,0.0204534402415715,273.153552246035) }
         }
         sub bright { q{Catppuccin::Data::Latte::Ansi::White::Bright} }
-        package Catppuccin::Data::Latte::Ansi::White::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Latte::Ansi::White::Bright {
           sub name { q{Bright White} }
           sub code { 15 }
           sub hex { q{#bcc0cc} }
@@ -498,16 +553,19 @@ package Catppuccin::Data {
     sub ansi_colors { (q{Catppuccin::Data::Latte::Ansi::Black},q{Catppuccin::Data::Latte::Ansi::Red},q{Catppuccin::Data::Latte::Ansi::Green},q{Catppuccin::Data::Latte::Ansi::Yellow},q{Catppuccin::Data::Latte::Ansi::Blue},q{Catppuccin::Data::Latte::Ansi::Magenta},q{Catppuccin::Data::Latte::Ansi::Cyan},q{Catppuccin::Data::Latte::Ansi::White}) }
   }
   sub frappe { q{Catppuccin::Data::Frappe} }
-  package Catppuccin::Data::Frappe {
+  package # hide from PAUSE
+   Catppuccin::Data::Frappe {
     sub id { q{frappe} }
     sub name { q{Frappé} }
     sub emoji { q{🪴} }
     sub order { 1 }
     sub dark { 1 }
     sub color { q{Catppuccin::Data::Frappe::Color} }
-    package Catppuccin::Data::Frappe::Color {
+    package # hide from PAUSE
+     Catppuccin::Data::Frappe::Color {
       sub rosewater { q{Catppuccin::Data::Frappe::Color::Rosewater} }
-      package Catppuccin::Data::Frappe::Color::Rosewater {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -518,7 +576,8 @@ package Catppuccin::Data {
         sub oklch { (0.89545210631128,0.0335487942259027,31.5995597887068) }
       }
       sub flamingo { q{Catppuccin::Data::Frappe::Color::Flamingo} }
-      package Catppuccin::Data::Frappe::Color::Flamingo {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -529,7 +588,8 @@ package Catppuccin::Data {
         sub oklch { (0.843939820682561,0.0553088720784619,18.3066484743889) }
       }
       sub pink { q{Catppuccin::Data::Frappe::Color::Pink} }
-      package Catppuccin::Data::Frappe::Color::Pink {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -540,7 +600,8 @@ package Catppuccin::Data {
         sub oklch { (0.850368709511421,0.0892420565329974,336.263305456001) }
       }
       sub mauve { q{Catppuccin::Data::Frappe::Color::Mauve} }
-      package Catppuccin::Data::Frappe::Color::Mauve {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -551,7 +612,8 @@ package Catppuccin::Data {
         sub oklch { (0.764753049713169,0.110770974720955,311.743604720391) }
       }
       sub red { q{Catppuccin::Data::Frappe::Color::Red} }
-      package Catppuccin::Data::Frappe::Color::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -562,7 +624,8 @@ package Catppuccin::Data {
         sub oklch { (0.717098722182712,0.124368134551872,19.3859052244265) }
       }
       sub maroon { q{Catppuccin::Data::Frappe::Color::Maroon} }
-      package Catppuccin::Data::Frappe::Color::Maroon {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -573,7 +636,8 @@ package Catppuccin::Data {
         sub oklch { (0.764639170587165,0.0975597941090391,17.1770519463091) }
       }
       sub peach { q{Catppuccin::Data::Frappe::Color::Peach} }
-      package Catppuccin::Data::Frappe::Color::Peach {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -584,7 +648,8 @@ package Catppuccin::Data {
         sub oklch { (0.772722342488044,0.110571543220686,47.7263819727679) }
       }
       sub yellow { q{Catppuccin::Data::Frappe::Color::Yellow} }
-      package Catppuccin::Data::Frappe::Color::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -595,7 +660,8 @@ package Catppuccin::Data {
         sub oklch { (0.844316475554874,0.079543440217882,83.4716500634123) }
       }
       sub green { q{Catppuccin::Data::Frappe::Color::Green} }
-      package Catppuccin::Data::Frappe::Color::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -606,7 +672,8 @@ package Catppuccin::Data {
         sub oklch { (0.812373906220774,0.107060918880116,133.391920893396) }
       }
       sub teal { q{Catppuccin::Data::Frappe::Color::Teal} }
-      package Catppuccin::Data::Frappe::Color::Teal {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -617,7 +684,8 @@ package Catppuccin::Data {
         sub oklch { (0.782980304565163,0.0729606497671879,184.644972755124) }
       }
       sub sky { q{Catppuccin::Data::Frappe::Color::Sky} }
-      package Catppuccin::Data::Frappe::Color::Sky {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -628,7 +696,8 @@ package Catppuccin::Data {
         sub oklch { (0.82550220281542,0.0591599878934928,209.756111068615) }
       }
       sub sapphire { q{Catppuccin::Data::Frappe::Color::Sapphire} }
-      package Catppuccin::Data::Frappe::Color::Sapphire {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -639,7 +708,8 @@ package Catppuccin::Data {
         sub oklch { (0.77955343422251,0.0726754061492902,227.87968935766) }
       }
       sub blue { q{Catppuccin::Data::Frappe::Color::Blue} }
-      package Catppuccin::Data::Frappe::Color::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -650,7 +720,8 @@ package Catppuccin::Data {
         sub oklch { (0.742010117188879,0.104443551287746,265.663192656093) }
       }
       sub lavender { q{Catppuccin::Data::Frappe::Color::Lavender} }
-      package Catppuccin::Data::Frappe::Color::Lavender {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -661,7 +732,8 @@ package Catppuccin::Data {
         sub oklch { (0.809899271286186,0.0758827742129732,283.740493583355) }
       }
       sub text { q{Catppuccin::Data::Frappe::Color::Text} }
-      package Catppuccin::Data::Frappe::Color::Text {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -672,7 +744,8 @@ package Catppuccin::Data {
         sub oklch { (0.861915903722206,0.0525532921391717,273.347361077195) }
       }
       sub subtext1 { q{Catppuccin::Data::Frappe::Color::Subtext1} }
-      package Catppuccin::Data::Frappe::Color::Subtext1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -683,7 +756,8 @@ package Catppuccin::Data {
         sub oklch { (0.808435081185243,0.0506698222748445,272.677974625096) }
       }
       sub subtext0 { q{Catppuccin::Data::Frappe::Color::Subtext0} }
-      package Catppuccin::Data::Frappe::Color::Subtext0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -694,7 +768,8 @@ package Catppuccin::Data {
         sub oklch { (0.752383817708528,0.0482828906614922,274.472592936756) }
       }
       sub overlay2 { q{Catppuccin::Data::Frappe::Color::Overlay2} }
-      package Catppuccin::Data::Frappe::Color::Overlay2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -705,7 +780,8 @@ package Catppuccin::Data {
         sub oklch { (0.696974154528872,0.0463698321912242,273.776911785343) }
       }
       sub overlay1 { q{Catppuccin::Data::Frappe::Color::Overlay1} }
-      package Catppuccin::Data::Frappe::Color::Overlay1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -716,7 +792,8 @@ package Catppuccin::Data {
         sub oklch { (0.640055458608038,0.0430001503544456,272.613701258403) }
       }
       sub overlay0 { q{Catppuccin::Data::Frappe::Color::Overlay0} }
-      package Catppuccin::Data::Frappe::Color::Overlay0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -727,7 +804,8 @@ package Catppuccin::Data {
         sub oklch { (0.580854423396155,0.042052429883359,275.198182828308) }
       }
       sub surface2 { q{Catppuccin::Data::Frappe::Color::Surface2} }
-      package Catppuccin::Data::Frappe::Color::Surface2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -738,7 +816,8 @@ package Catppuccin::Data {
         sub oklch { (0.521117166361794,0.0385895789059929,273.999201667152) }
       }
       sub surface1 { q{Catppuccin::Data::Frappe::Color::Surface1} }
-      package Catppuccin::Data::Frappe::Color::Surface1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -749,7 +828,8 @@ package Catppuccin::Data {
         sub oklch { (0.460056604215664,0.0366614499175497,272.965798736086) }
       }
       sub surface0 { q{Catppuccin::Data::Frappe::Color::Surface0} }
-      package Catppuccin::Data::Frappe::Color::Surface0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -760,7 +840,8 @@ package Catppuccin::Data {
         sub oklch { (0.394918844714492,0.0342392761201927,275.899927458692) }
       }
       sub base { q{Catppuccin::Data::Frappe::Color::Base} }
-      package Catppuccin::Data::Frappe::Color::Base {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -771,7 +852,8 @@ package Catppuccin::Data {
         sub oklch { (0.329074001940859,0.0323913109239601,274.75804633083) }
       }
       sub mantle { q{Catppuccin::Data::Frappe::Color::Mantle} }
-      package Catppuccin::Data::Frappe::Color::Mantle {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -782,7 +864,8 @@ package Catppuccin::Data {
         sub oklch { (0.297341617804551,0.029378405338955,276.21439474345) }
       }
       sub crust { q{Catppuccin::Data::Frappe::Color::Crust} }
-      package Catppuccin::Data::Frappe::Color::Crust {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -795,14 +878,17 @@ package Catppuccin::Data {
     }
     sub colors { (q{Catppuccin::Data::Frappe::Color::Rosewater},q{Catppuccin::Data::Frappe::Color::Flamingo},q{Catppuccin::Data::Frappe::Color::Pink},q{Catppuccin::Data::Frappe::Color::Mauve},q{Catppuccin::Data::Frappe::Color::Red},q{Catppuccin::Data::Frappe::Color::Maroon},q{Catppuccin::Data::Frappe::Color::Peach},q{Catppuccin::Data::Frappe::Color::Yellow},q{Catppuccin::Data::Frappe::Color::Green},q{Catppuccin::Data::Frappe::Color::Teal},q{Catppuccin::Data::Frappe::Color::Sky},q{Catppuccin::Data::Frappe::Color::Sapphire},q{Catppuccin::Data::Frappe::Color::Blue},q{Catppuccin::Data::Frappe::Color::Lavender},q{Catppuccin::Data::Frappe::Color::Text},q{Catppuccin::Data::Frappe::Color::Subtext1},q{Catppuccin::Data::Frappe::Color::Subtext0},q{Catppuccin::Data::Frappe::Color::Overlay2},q{Catppuccin::Data::Frappe::Color::Overlay1},q{Catppuccin::Data::Frappe::Color::Overlay0},q{Catppuccin::Data::Frappe::Color::Surface2},q{Catppuccin::Data::Frappe::Color::Surface1},q{Catppuccin::Data::Frappe::Color::Surface0},q{Catppuccin::Data::Frappe::Color::Base},q{Catppuccin::Data::Frappe::Color::Mantle},q{Catppuccin::Data::Frappe::Color::Crust}) }
     sub ansi { q{Catppuccin::Data::Frappe::Ansi} }
-    package Catppuccin::Data::Frappe::Ansi {
+    package # hide from PAUSE
+     Catppuccin::Data::Frappe::Ansi {
       sub black { q{Catppuccin::Data::Frappe::Ansi::Black} }
-      package Catppuccin::Data::Frappe::Ansi::Black {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Black {
         sub id { q{black} }
         sub name { q{Black} }
         sub order { 0 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Black::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Black::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Black::Normal {
           sub name { q{Black} }
           sub code { 0 }
           sub hex { q{#51576d} }
@@ -811,7 +897,8 @@ package Catppuccin::Data {
           sub oklch { (0.460056604215664,0.0366614499175497,272.965798736086) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Black::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Black::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Black::Bright {
           sub name { q{Bright Black} }
           sub code { 8 }
           sub hex { q{#626880} }
@@ -821,12 +908,14 @@ package Catppuccin::Data {
         }
       }
       sub red { q{Catppuccin::Data::Frappe::Ansi::Red} }
-      package Catppuccin::Data::Frappe::Ansi::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 1 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Red::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Red::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Red::Normal {
           sub name { q{Red} }
           sub code { 1 }
           sub hex { q{#e78284} }
@@ -835,7 +924,8 @@ package Catppuccin::Data {
           sub oklch { (0.717098722182712,0.124368134551872,19.3859052244265) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Red::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Red::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Red::Bright {
           sub name { q{Bright Red} }
           sub code { 9 }
           sub hex { q{#e67172} }
@@ -845,12 +935,14 @@ package Catppuccin::Data {
         }
       }
       sub green { q{Catppuccin::Data::Frappe::Ansi::Green} }
-      package Catppuccin::Data::Frappe::Ansi::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 2 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Green::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Green::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Green::Normal {
           sub name { q{Green} }
           sub code { 2 }
           sub hex { q{#a6d189} }
@@ -859,7 +951,8 @@ package Catppuccin::Data {
           sub oklch { (0.812373906220774,0.107060918880116,133.391920893396) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Green::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Green::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Green::Bright {
           sub name { q{Bright Green} }
           sub code { 10 }
           sub hex { q{#8ec772} }
@@ -869,12 +962,14 @@ package Catppuccin::Data {
         }
       }
       sub yellow { q{Catppuccin::Data::Frappe::Ansi::Yellow} }
-      package Catppuccin::Data::Frappe::Ansi::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 3 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Yellow::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Yellow::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Yellow::Normal {
           sub name { q{Yellow} }
           sub code { 3 }
           sub hex { q{#e5c890} }
@@ -883,7 +978,8 @@ package Catppuccin::Data {
           sub oklch { (0.844316475554874,0.079543440217882,83.4716500634123) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Yellow::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Yellow::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Yellow::Bright {
           sub name { q{Bright Yellow} }
           sub code { 11 }
           sub hex { q{#d9ba73} }
@@ -893,12 +989,14 @@ package Catppuccin::Data {
         }
       }
       sub blue { q{Catppuccin::Data::Frappe::Ansi::Blue} }
-      package Catppuccin::Data::Frappe::Ansi::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 4 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Blue::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Blue::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Blue::Normal {
           sub name { q{Blue} }
           sub code { 4 }
           sub hex { q{#8caaee} }
@@ -907,7 +1005,8 @@ package Catppuccin::Data {
           sub oklch { (0.742010117188879,0.104443551287746,265.663192656093) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Blue::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Blue::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Blue::Bright {
           sub name { q{Bright Blue} }
           sub code { 12 }
           sub hex { q{#7b9ef0} }
@@ -917,12 +1016,14 @@ package Catppuccin::Data {
         }
       }
       sub magenta { q{Catppuccin::Data::Frappe::Ansi::Magenta} }
-      package Catppuccin::Data::Frappe::Ansi::Magenta {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Magenta {
         sub id { q{magenta} }
         sub name { q{Magenta} }
         sub order { 5 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Magenta::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Magenta::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Magenta::Normal {
           sub name { q{Magenta} }
           sub code { 5 }
           sub hex { q{#f4b8e4} }
@@ -931,7 +1032,8 @@ package Catppuccin::Data {
           sub oklch { (0.850368709511421,0.0892420565329974,336.263305456001) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Magenta::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Magenta::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Magenta::Bright {
           sub name { q{Bright Magenta} }
           sub code { 13 }
           sub hex { q{#f2a4db} }
@@ -941,12 +1043,14 @@ package Catppuccin::Data {
         }
       }
       sub cyan { q{Catppuccin::Data::Frappe::Ansi::Cyan} }
-      package Catppuccin::Data::Frappe::Ansi::Cyan {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::Cyan {
         sub id { q{cyan} }
         sub name { q{Cyan} }
         sub order { 6 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::Cyan::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::Cyan::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Cyan::Normal {
           sub name { q{Cyan} }
           sub code { 6 }
           sub hex { q{#81c8be} }
@@ -955,7 +1059,8 @@ package Catppuccin::Data {
           sub oklch { (0.782980304565163,0.0729606497671879,184.644972755124) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::Cyan::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::Cyan::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::Cyan::Bright {
           sub name { q{Bright Cyan} }
           sub code { 14 }
           sub hex { q{#5abfb5} }
@@ -965,12 +1070,14 @@ package Catppuccin::Data {
         }
       }
       sub white { q{Catppuccin::Data::Frappe::Ansi::White} }
-      package Catppuccin::Data::Frappe::Ansi::White {
+      package # hide from PAUSE
+       Catppuccin::Data::Frappe::Ansi::White {
         sub id { q{white} }
         sub name { q{White} }
         sub order { 7 }
         sub normal { q{Catppuccin::Data::Frappe::Ansi::White::Normal} }
-        package Catppuccin::Data::Frappe::Ansi::White::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::White::Normal {
           sub name { q{White} }
           sub code { 7 }
           sub hex { q{#a5adce} }
@@ -979,7 +1086,8 @@ package Catppuccin::Data {
           sub oklch { (0.752383817708528,0.0482828906614922,274.472592936756) }
         }
         sub bright { q{Catppuccin::Data::Frappe::Ansi::White::Bright} }
-        package Catppuccin::Data::Frappe::Ansi::White::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Frappe::Ansi::White::Bright {
           sub name { q{Bright White} }
           sub code { 15 }
           sub hex { q{#b5bfe2} }
@@ -992,16 +1100,19 @@ package Catppuccin::Data {
     sub ansi_colors { (q{Catppuccin::Data::Frappe::Ansi::Black},q{Catppuccin::Data::Frappe::Ansi::Red},q{Catppuccin::Data::Frappe::Ansi::Green},q{Catppuccin::Data::Frappe::Ansi::Yellow},q{Catppuccin::Data::Frappe::Ansi::Blue},q{Catppuccin::Data::Frappe::Ansi::Magenta},q{Catppuccin::Data::Frappe::Ansi::Cyan},q{Catppuccin::Data::Frappe::Ansi::White}) }
   }
   sub macchiato { q{Catppuccin::Data::Macchiato} }
-  package Catppuccin::Data::Macchiato {
+  package # hide from PAUSE
+   Catppuccin::Data::Macchiato {
     sub id { q{macchiato} }
     sub name { q{Macchiato} }
     sub emoji { q{🌺} }
     sub order { 2 }
     sub dark { 1 }
     sub color { q{Catppuccin::Data::Macchiato::Color} }
-    package Catppuccin::Data::Macchiato::Color {
+    package # hide from PAUSE
+     Catppuccin::Data::Macchiato::Color {
       sub rosewater { q{Catppuccin::Data::Macchiato::Color::Rosewater} }
-      package Catppuccin::Data::Macchiato::Color::Rosewater {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -1012,7 +1123,8 @@ package Catppuccin::Data {
         sub oklch { (0.910520683432491,0.0286435024213148,31.1325549749212) }
       }
       sub flamingo { q{Catppuccin::Data::Macchiato::Color::Flamingo} }
-      package Catppuccin::Data::Macchiato::Color::Flamingo {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -1023,7 +1135,8 @@ package Catppuccin::Data {
         sub oklch { (0.86287874732009,0.0478940487275183,18.1203108459457) }
       }
       sub pink { q{Catppuccin::Data::Macchiato::Color::Pink} }
-      package Catppuccin::Data::Macchiato::Color::Pink {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -1034,7 +1147,8 @@ package Catppuccin::Data {
         sub oklch { (0.860804113234452,0.083027508946297,336.179893036051) }
       }
       sub mauve { q{Catppuccin::Data::Macchiato::Color::Mauve} }
-      package Catppuccin::Data::Macchiato::Color::Mauve {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -1045,7 +1159,8 @@ package Catppuccin::Data {
         sub oklch { (0.771522608032644,0.125895634755372,303.898394591392) }
       }
       sub red { q{Catppuccin::Data::Macchiato::Color::Red} }
-      package Catppuccin::Data::Macchiato::Color::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -1056,7 +1171,8 @@ package Catppuccin::Data {
         sub oklch { (0.736999819953577,0.12515625744541,11.1943183679601) }
       }
       sub maroon { q{Catppuccin::Data::Macchiato::Color::Maroon} }
-      package Catppuccin::Data::Macchiato::Color::Maroon {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -1067,7 +1183,8 @@ package Catppuccin::Data {
         sub oklch { (0.770232108416198,0.10236712493806,14.3707343170264) }
       }
       sub peach { q{Catppuccin::Data::Macchiato::Color::Peach} }
-      package Catppuccin::Data::Macchiato::Color::Peach {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -1078,7 +1195,8 @@ package Catppuccin::Data {
         sub oklch { (0.798823070061601,0.106055554316779,49.6375862709047) }
       }
       sub yellow { q{Catppuccin::Data::Macchiato::Color::Yellow} }
-      package Catppuccin::Data::Macchiato::Color::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -1089,7 +1207,8 @@ package Catppuccin::Data {
         sub oklch { (0.87898903272889,0.0744419390304426,84.750976187343) }
       }
       sub green { q{Catppuccin::Data::Macchiato::Color::Green} }
-      package Catppuccin::Data::Macchiato::Color::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -1100,7 +1219,8 @@ package Catppuccin::Data {
         sub oklch { (0.83498496943401,0.107909776412959,138.150329847292) }
       }
       sub teal { q{Catppuccin::Data::Macchiato::Color::Teal} }
-      package Catppuccin::Data::Macchiato::Color::Teal {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -1111,7 +1231,8 @@ package Catppuccin::Data {
         sub oklch { (0.821357775248586,0.0755059953458314,184.100028151927) }
       }
       sub sky { q{Catppuccin::Data::Macchiato::Color::Sky} }
-      package Catppuccin::Data::Macchiato::Color::Sky {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -1122,7 +1243,8 @@ package Catppuccin::Data {
         sub oklch { (0.836935492572236,0.0718693794483332,209.365774049977) }
       }
       sub sapphire { q{Catppuccin::Data::Macchiato::Color::Sapphire} }
-      package Catppuccin::Data::Macchiato::Color::Sapphire {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -1133,7 +1255,8 @@ package Catppuccin::Data {
         sub oklch { (0.785077206179302,0.0845208855601422,228.377974840602) }
       }
       sub blue { q{Catppuccin::Data::Macchiato::Color::Blue} }
-      package Catppuccin::Data::Macchiato::Color::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -1144,7 +1267,8 @@ package Catppuccin::Data {
         sub oklch { (0.749727822254407,0.110095575845028,263.810329203269) }
       }
       sub lavender { q{Catppuccin::Data::Macchiato::Color::Lavender} }
-      package Catppuccin::Data::Macchiato::Color::Lavender {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -1155,7 +1279,8 @@ package Catppuccin::Data {
         sub oklch { (0.814364913000351,0.0833519720769762,279.853667411748) }
       }
       sub text { q{Catppuccin::Data::Macchiato::Color::Text} }
-      package Catppuccin::Data::Macchiato::Color::Text {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -1166,7 +1291,8 @@ package Catppuccin::Data {
         sub oklch { (0.870825085511304,0.0480775215477313,273.665090681354) }
       }
       sub subtext1 { q{Catppuccin::Data::Macchiato::Color::Subtext1} }
-      package Catppuccin::Data::Macchiato::Color::Subtext1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -1177,7 +1303,8 @@ package Catppuccin::Data {
         sub oklch { (0.811977183467627,0.0459417988044203,274.267184551977) }
       }
       sub subtext0 { q{Catppuccin::Data::Macchiato::Color::Subtext0} }
-      package Catppuccin::Data::Macchiato::Color::Subtext0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -1188,7 +1315,8 @@ package Catppuccin::Data {
         sub oklch { (0.751280540270085,0.0440558566717991,273.532655471331) }
       }
       sub overlay2 { q{Catppuccin::Data::Macchiato::Color::Overlay2} }
-      package Catppuccin::Data::Macchiato::Color::Overlay2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -1199,7 +1327,8 @@ package Catppuccin::Data {
         sub oklch { (0.690488290925986,0.0433347303141852,274.538771140957) }
       }
       sub overlay1 { q{Catppuccin::Data::Macchiato::Color::Overlay1} }
-      package Catppuccin::Data::Macchiato::Color::Overlay1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -1210,7 +1339,8 @@ package Catppuccin::Data {
         sub oklch { (0.627153669200802,0.0414728905342509,273.732824823871) }
       }
       sub overlay0 { q{Catppuccin::Data::Macchiato::Color::Overlay0} }
-      package Catppuccin::Data::Macchiato::Color::Overlay0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -1221,7 +1351,8 @@ package Catppuccin::Data {
         sub oklch { (0.56079161245133,0.0406715398784128,276.474752866572) }
       }
       sub surface2 { q{Catppuccin::Data::Macchiato::Color::Surface2} }
-      package Catppuccin::Data::Macchiato::Color::Surface2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -1232,7 +1363,8 @@ package Catppuccin::Data {
         sub oklch { (0.493852279148929,0.0388722924962449,275.683315641442) }
       }
       sub surface1 { q{Catppuccin::Data::Macchiato::Color::Surface1} }
-      package Catppuccin::Data::Macchiato::Color::Surface1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -1243,7 +1375,8 @@ package Catppuccin::Data {
         sub oklch { (0.42590353818195,0.0385085788991422,276.947676253187) }
       }
       sub surface0 { q{Catppuccin::Data::Macchiato::Color::Surface0} }
-      package Catppuccin::Data::Macchiato::Color::Surface0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -1254,7 +1387,8 @@ package Catppuccin::Data {
         sub oklch { (0.353790366561865,0.0369466754112495,275.985096354481) }
       }
       sub base { q{Catppuccin::Data::Macchiato::Color::Base} }
-      package Catppuccin::Data::Macchiato::Color::Base {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -1265,7 +1399,8 @@ package Catppuccin::Data {
         sub oklch { (0.278808297866842,0.0353411582950485,276.936815382128) }
       }
       sub mantle { q{Catppuccin::Data::Macchiato::Color::Mantle} }
-      package Catppuccin::Data::Macchiato::Color::Mantle {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -1276,7 +1411,8 @@ package Catppuccin::Data {
         sub oklch { (0.249250765812473,0.0304807007178624,278.435034187334) }
       }
       sub crust { q{Catppuccin::Data::Macchiato::Color::Crust} }
-      package Catppuccin::Data::Macchiato::Color::Crust {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -1289,14 +1425,17 @@ package Catppuccin::Data {
     }
     sub colors { (q{Catppuccin::Data::Macchiato::Color::Rosewater},q{Catppuccin::Data::Macchiato::Color::Flamingo},q{Catppuccin::Data::Macchiato::Color::Pink},q{Catppuccin::Data::Macchiato::Color::Mauve},q{Catppuccin::Data::Macchiato::Color::Red},q{Catppuccin::Data::Macchiato::Color::Maroon},q{Catppuccin::Data::Macchiato::Color::Peach},q{Catppuccin::Data::Macchiato::Color::Yellow},q{Catppuccin::Data::Macchiato::Color::Green},q{Catppuccin::Data::Macchiato::Color::Teal},q{Catppuccin::Data::Macchiato::Color::Sky},q{Catppuccin::Data::Macchiato::Color::Sapphire},q{Catppuccin::Data::Macchiato::Color::Blue},q{Catppuccin::Data::Macchiato::Color::Lavender},q{Catppuccin::Data::Macchiato::Color::Text},q{Catppuccin::Data::Macchiato::Color::Subtext1},q{Catppuccin::Data::Macchiato::Color::Subtext0},q{Catppuccin::Data::Macchiato::Color::Overlay2},q{Catppuccin::Data::Macchiato::Color::Overlay1},q{Catppuccin::Data::Macchiato::Color::Overlay0},q{Catppuccin::Data::Macchiato::Color::Surface2},q{Catppuccin::Data::Macchiato::Color::Surface1},q{Catppuccin::Data::Macchiato::Color::Surface0},q{Catppuccin::Data::Macchiato::Color::Base},q{Catppuccin::Data::Macchiato::Color::Mantle},q{Catppuccin::Data::Macchiato::Color::Crust}) }
     sub ansi { q{Catppuccin::Data::Macchiato::Ansi} }
-    package Catppuccin::Data::Macchiato::Ansi {
+    package # hide from PAUSE
+     Catppuccin::Data::Macchiato::Ansi {
       sub black { q{Catppuccin::Data::Macchiato::Ansi::Black} }
-      package Catppuccin::Data::Macchiato::Ansi::Black {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Black {
         sub id { q{black} }
         sub name { q{Black} }
         sub order { 0 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Black::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Black::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Black::Normal {
           sub name { q{Black} }
           sub code { 0 }
           sub hex { q{#494d64} }
@@ -1305,7 +1444,8 @@ package Catppuccin::Data {
           sub oklch { (0.42590353818195,0.0385085788991422,276.947676253187) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Black::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Black::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Black::Bright {
           sub name { q{Bright Black} }
           sub code { 8 }
           sub hex { q{#5b6078} }
@@ -1315,12 +1455,14 @@ package Catppuccin::Data {
         }
       }
       sub red { q{Catppuccin::Data::Macchiato::Ansi::Red} }
-      package Catppuccin::Data::Macchiato::Ansi::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 1 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Red::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Red::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Red::Normal {
           sub name { q{Red} }
           sub code { 1 }
           sub hex { q{#ed8796} }
@@ -1329,7 +1471,8 @@ package Catppuccin::Data {
           sub oklch { (0.736999819953577,0.12515625744541,11.1943183679601) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Red::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Red::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Red::Bright {
           sub name { q{Bright Red} }
           sub code { 9 }
           sub hex { q{#ec7486} }
@@ -1339,12 +1482,14 @@ package Catppuccin::Data {
         }
       }
       sub green { q{Catppuccin::Data::Macchiato::Ansi::Green} }
-      package Catppuccin::Data::Macchiato::Ansi::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 2 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Green::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Green::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Green::Normal {
           sub name { q{Green} }
           sub code { 2 }
           sub hex { q{#a6da95} }
@@ -1353,7 +1498,8 @@ package Catppuccin::Data {
           sub oklch { (0.83498496943401,0.107909776412959,138.150329847292) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Green::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Green::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Green::Bright {
           sub name { q{Bright Green} }
           sub code { 10 }
           sub hex { q{#8ccf7f} }
@@ -1363,12 +1509,14 @@ package Catppuccin::Data {
         }
       }
       sub yellow { q{Catppuccin::Data::Macchiato::Ansi::Yellow} }
-      package Catppuccin::Data::Macchiato::Ansi::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 3 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Yellow::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Yellow::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Yellow::Normal {
           sub name { q{Yellow} }
           sub code { 3 }
           sub hex { q{#eed49f} }
@@ -1377,7 +1525,8 @@ package Catppuccin::Data {
           sub oklch { (0.87898903272889,0.0744419390304426,84.750976187343) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Yellow::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Yellow::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Yellow::Bright {
           sub name { q{Bright Yellow} }
           sub code { 11 }
           sub hex { q{#e1c682} }
@@ -1387,12 +1536,14 @@ package Catppuccin::Data {
         }
       }
       sub blue { q{Catppuccin::Data::Macchiato::Ansi::Blue} }
-      package Catppuccin::Data::Macchiato::Ansi::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 4 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Blue::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Blue::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Blue::Normal {
           sub name { q{Blue} }
           sub code { 4 }
           sub hex { q{#8aadf4} }
@@ -1401,7 +1552,8 @@ package Catppuccin::Data {
           sub oklch { (0.749727822254407,0.110095575845028,263.810329203269) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Blue::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Blue::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Blue::Bright {
           sub name { q{Bright Blue} }
           sub code { 12 }
           sub hex { q{#78a1f6} }
@@ -1411,12 +1563,14 @@ package Catppuccin::Data {
         }
       }
       sub magenta { q{Catppuccin::Data::Macchiato::Ansi::Magenta} }
-      package Catppuccin::Data::Macchiato::Ansi::Magenta {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Magenta {
         sub id { q{magenta} }
         sub name { q{Magenta} }
         sub order { 5 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Magenta::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Magenta::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Magenta::Normal {
           sub name { q{Magenta} }
           sub code { 5 }
           sub hex { q{#f5bde6} }
@@ -1425,7 +1579,8 @@ package Catppuccin::Data {
           sub oklch { (0.860804113234452,0.083027508946297,336.179893036051) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Magenta::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Magenta::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Magenta::Bright {
           sub name { q{Bright Magenta} }
           sub code { 13 }
           sub hex { q{#f2a9dd} }
@@ -1435,12 +1590,14 @@ package Catppuccin::Data {
         }
       }
       sub cyan { q{Catppuccin::Data::Macchiato::Ansi::Cyan} }
-      package Catppuccin::Data::Macchiato::Ansi::Cyan {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::Cyan {
         sub id { q{cyan} }
         sub name { q{Cyan} }
         sub order { 6 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::Cyan::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::Cyan::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Cyan::Normal {
           sub name { q{Cyan} }
           sub code { 6 }
           sub hex { q{#8bd5ca} }
@@ -1449,7 +1606,8 @@ package Catppuccin::Data {
           sub oklch { (0.821357775248586,0.0755059953458314,184.100028151927) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::Cyan::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::Cyan::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::Cyan::Bright {
           sub name { q{Bright Cyan} }
           sub code { 14 }
           sub hex { q{#63cbc0} }
@@ -1459,12 +1617,14 @@ package Catppuccin::Data {
         }
       }
       sub white { q{Catppuccin::Data::Macchiato::Ansi::White} }
-      package Catppuccin::Data::Macchiato::Ansi::White {
+      package # hide from PAUSE
+       Catppuccin::Data::Macchiato::Ansi::White {
         sub id { q{white} }
         sub name { q{White} }
         sub order { 7 }
         sub normal { q{Catppuccin::Data::Macchiato::Ansi::White::Normal} }
-        package Catppuccin::Data::Macchiato::Ansi::White::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::White::Normal {
           sub name { q{White} }
           sub code { 7 }
           sub hex { q{#a5adcb} }
@@ -1473,7 +1633,8 @@ package Catppuccin::Data {
           sub oklch { (0.751280540270085,0.0440558566717991,273.532655471331) }
         }
         sub bright { q{Catppuccin::Data::Macchiato::Ansi::White::Bright} }
-        package Catppuccin::Data::Macchiato::Ansi::White::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Macchiato::Ansi::White::Bright {
           sub name { q{Bright White} }
           sub code { 15 }
           sub hex { q{#b8c0e0} }
@@ -1486,16 +1647,19 @@ package Catppuccin::Data {
     sub ansi_colors { (q{Catppuccin::Data::Macchiato::Ansi::Black},q{Catppuccin::Data::Macchiato::Ansi::Red},q{Catppuccin::Data::Macchiato::Ansi::Green},q{Catppuccin::Data::Macchiato::Ansi::Yellow},q{Catppuccin::Data::Macchiato::Ansi::Blue},q{Catppuccin::Data::Macchiato::Ansi::Magenta},q{Catppuccin::Data::Macchiato::Ansi::Cyan},q{Catppuccin::Data::Macchiato::Ansi::White}) }
   }
   sub mocha { q{Catppuccin::Data::Mocha} }
-  package Catppuccin::Data::Mocha {
+  package # hide from PAUSE
+   Catppuccin::Data::Mocha {
     sub id { q{mocha} }
     sub name { q{Mocha} }
     sub emoji { q{🌿} }
     sub order { 3 }
     sub dark { 1 }
     sub color { q{Catppuccin::Data::Mocha::Color} }
-    package Catppuccin::Data::Mocha::Color {
+    package # hide from PAUSE
+     Catppuccin::Data::Mocha::Color {
       sub rosewater { q{Catppuccin::Data::Mocha::Color::Rosewater} }
-      package Catppuccin::Data::Mocha::Color::Rosewater {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Rosewater {
         sub id { q{rosewater} }
         sub name { q{Rosewater} }
         sub order { 0 }
@@ -1506,7 +1670,8 @@ package Catppuccin::Data {
         sub oklch { (0.922570149778013,0.0238348119741779,30.4918552599891) }
       }
       sub flamingo { q{Catppuccin::Data::Mocha::Color::Flamingo} }
-      package Catppuccin::Data::Mocha::Color::Flamingo {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Flamingo {
         sub id { q{flamingo} }
         sub name { q{Flamingo} }
         sub order { 1 }
@@ -1517,7 +1682,8 @@ package Catppuccin::Data {
         sub oklch { (0.879744246442704,0.0418125291234638,17.9750250524247) }
       }
       sub pink { q{Catppuccin::Data::Mocha::Color::Pink} }
-      package Catppuccin::Data::Mocha::Color::Pink {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Pink {
         sub id { q{pink} }
         sub name { q{Pink} }
         sub order { 2 }
@@ -1528,7 +1694,8 @@ package Catppuccin::Data {
         sub oklch { (0.870032607058557,0.0751577539668794,336.304084551999) }
       }
       sub mauve { q{Catppuccin::Data::Mocha::Color::Mauve} }
-      package Catppuccin::Data::Mocha::Color::Mauve {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Mauve {
         sub id { q{mauve} }
         sub name { q{Mauve} }
         sub order { 3 }
@@ -1539,7 +1706,8 @@ package Catppuccin::Data {
         sub oklch { (0.787146252576066,0.118670111359866,304.769304376724) }
       }
       sub red { q{Catppuccin::Data::Mocha::Color::Red} }
-      package Catppuccin::Data::Mocha::Color::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 4 }
@@ -1550,7 +1718,8 @@ package Catppuccin::Data {
         sub oklch { (0.755592011161043,0.129702142513949,2.76416484470991) }
       }
       sub maroon { q{Catppuccin::Data::Mocha::Color::Maroon} }
-      package Catppuccin::Data::Mocha::Color::Maroon {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Maroon {
         sub id { q{maroon} }
         sub name { q{Maroon} }
         sub order { 5 }
@@ -1561,7 +1730,8 @@ package Catppuccin::Data {
         sub oklch { (0.782050201625379,0.0903299374799859,8.84816486600585) }
       }
       sub peach { q{Catppuccin::Data::Mocha::Color::Peach} }
-      package Catppuccin::Data::Mocha::Color::Peach {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Peach {
         sub id { q{peach} }
         sub name { q{Peach} }
         sub order { 6 }
@@ -1572,7 +1742,8 @@ package Catppuccin::Data {
         sub oklch { (0.823678233730965,0.101460341547387,52.6294168619111) }
       }
       sub yellow { q{Catppuccin::Data::Mocha::Color::Yellow} }
-      package Catppuccin::Data::Mocha::Color::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 7 }
@@ -1583,7 +1754,8 @@ package Catppuccin::Data {
         sub oklch { (0.919302853821224,0.070414627194939,86.528082232724) }
       }
       sub green { q{Catppuccin::Data::Mocha::Color::Green} }
-      package Catppuccin::Data::Mocha::Color::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 8 }
@@ -1594,7 +1766,8 @@ package Catppuccin::Data {
         sub oklch { (0.857704223179352,0.109228579658491,142.715289015539) }
       }
       sub teal { q{Catppuccin::Data::Mocha::Color::Teal} }
-      package Catppuccin::Data::Mocha::Color::Teal {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Teal {
         sub id { q{teal} }
         sub name { q{Teal} }
         sub order { 9 }
@@ -1605,7 +1778,8 @@ package Catppuccin::Data {
         sub oklch { (0.858489039899321,0.0792067005209004,182.74951302555) }
       }
       sub sky { q{Catppuccin::Data::Mocha::Color::Sky} }
-      package Catppuccin::Data::Mocha::Color::Sky {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Sky {
         sub id { q{sky} }
         sub name { q{Sky} }
         sub order { 10 }
@@ -1616,7 +1790,8 @@ package Catppuccin::Data {
         sub oklch { (0.846711391372848,0.0833360810088085,210.254541480976) }
       }
       sub sapphire { q{Catppuccin::Data::Mocha::Color::Sapphire} }
-      package Catppuccin::Data::Mocha::Color::Sapphire {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Sapphire {
         sub id { q{sapphire} }
         sub name { q{Sapphire} }
         sub order { 11 }
@@ -1627,7 +1802,8 @@ package Catppuccin::Data {
         sub oklch { (0.790649687529011,0.0964903996003699,228.652678915858) }
       }
       sub blue { q{Catppuccin::Data::Mocha::Color::Blue} }
-      package Catppuccin::Data::Mocha::Color::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 12 }
@@ -1638,7 +1814,8 @@ package Catppuccin::Data {
         sub oklch { (0.766420361629136,0.111344266788129,259.88497602028) }
       }
       sub lavender { q{Catppuccin::Data::Mocha::Color::Lavender} }
-      package Catppuccin::Data::Mocha::Color::Lavender {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Lavender {
         sub id { q{lavender} }
         sub name { q{Lavender} }
         sub order { 13 }
@@ -1649,7 +1826,8 @@ package Catppuccin::Data {
         sub oklch { (0.816596007060097,0.0909518292192676,277.309242831416) }
       }
       sub text { q{Catppuccin::Data::Mocha::Color::Text} }
-      package Catppuccin::Data::Mocha::Color::Text {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Text {
         sub id { q{text} }
         sub name { q{Text} }
         sub order { 14 }
@@ -1660,7 +1838,8 @@ package Catppuccin::Data {
         sub oklch { (0.878660079347372,0.0425519990351719,272.276737841537) }
       }
       sub subtext1 { q{Catppuccin::Data::Mocha::Color::Subtext1} }
-      package Catppuccin::Data::Mocha::Color::Subtext1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Subtext1 {
         sub id { q{subtext1} }
         sub name { q{Subtext 1} }
         sub order { 15 }
@@ -1671,7 +1850,8 @@ package Catppuccin::Data {
         sub oklch { (0.816822778747893,0.0403445646844379,272.862189336409) }
       }
       sub subtext0 { q{Catppuccin::Data::Mocha::Color::Subtext0} }
-      package Catppuccin::Data::Mocha::Color::Subtext0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Subtext0 {
         sub id { q{subtext0} }
         sub name { q{Subtext 0} }
         sub order { 16 }
@@ -1682,7 +1862,8 @@ package Catppuccin::Data {
         sub oklch { (0.750960547260553,0.0395649859617788,273.931990372704) }
       }
       sub overlay2 { q{Catppuccin::Data::Mocha::Color::Overlay2} }
-      package Catppuccin::Data::Mocha::Color::Overlay2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Overlay2 {
         sub id { q{overlay2} }
         sub name { q{Overlay 2} }
         sub order { 17 }
@@ -1693,7 +1874,8 @@ package Catppuccin::Data {
         sub oklch { (0.686520743055446,0.0373548963157601,274.7252765055) }
       }
       sub overlay1 { q{Catppuccin::Data::Mocha::Color::Overlay1} }
-      package Catppuccin::Data::Mocha::Color::Overlay1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Overlay1 {
         sub id { q{overlay1} }
         sub name { q{Overlay 1} }
         sub order { 18 }
@@ -1704,7 +1886,8 @@ package Catppuccin::Data {
         sub oklch { (0.617567151018584,0.0366697431688593,276.0047079409) }
       }
       sub overlay0 { q{Catppuccin::Data::Mocha::Color::Overlay0} }
-      package Catppuccin::Data::Mocha::Color::Overlay0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Overlay0 {
         sub id { q{overlay0} }
         sub name { q{Overlay 0} }
         sub order { 19 }
@@ -1715,7 +1898,8 @@ package Catppuccin::Data {
         sub oklch { (0.549691183767789,0.0344939082700212,277.095074605861) }
       }
       sub surface2 { q{Catppuccin::Data::Mocha::Color::Surface2} }
-      package Catppuccin::Data::Mocha::Color::Surface2 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Surface2 {
         sub id { q{surface2} }
         sub name { q{Surface 2} }
         sub order { 20 }
@@ -1726,7 +1910,8 @@ package Catppuccin::Data {
         sub oklch { (0.476506466663872,0.0339935404420057,278.643039748306) }
       }
       sub surface1 { q{Catppuccin::Data::Mocha::Color::Surface1} }
-      package Catppuccin::Data::Mocha::Color::Surface1 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Surface1 {
         sub id { q{surface1} }
         sub name { q{Surface 1} }
         sub order { 21 }
@@ -1737,7 +1922,8 @@ package Catppuccin::Data {
         sub oklch { (0.403691419694441,0.0319546413282236,280.152003607294) }
       }
       sub surface0 { q{Catppuccin::Data::Mocha::Color::Surface0} }
-      package Catppuccin::Data::Mocha::Color::Surface0 {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Surface0 {
         sub id { q{surface0} }
         sub name { q{Surface 0} }
         sub order { 22 }
@@ -1748,7 +1934,8 @@ package Catppuccin::Data {
         sub oklch { (0.324021887446302,0.0318845523939924,281.978441741265) }
       }
       sub base { q{Catppuccin::Data::Mocha::Color::Base} }
-      package Catppuccin::Data::Mocha::Color::Base {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Base {
         sub id { q{base} }
         sub name { q{Base} }
         sub order { 23 }
@@ -1759,7 +1946,8 @@ package Catppuccin::Data {
         sub oklch { (0.242866941838384,0.0303573627594497,283.910970236414) }
       }
       sub mantle { q{Catppuccin::Data::Mocha::Color::Mantle} }
-      package Catppuccin::Data::Mocha::Color::Mantle {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Mantle {
         sub id { q{mantle} }
         sub name { q{Mantle} }
         sub order { 24 }
@@ -1770,7 +1958,8 @@ package Catppuccin::Data {
         sub oklch { (0.215521607950062,0.0254168708991907,284.064699021933) }
       }
       sub crust { q{Catppuccin::Data::Mocha::Color::Crust} }
-      package Catppuccin::Data::Mocha::Color::Crust {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Color::Crust {
         sub id { q{crust} }
         sub name { q{Crust} }
         sub order { 25 }
@@ -1783,14 +1972,17 @@ package Catppuccin::Data {
     }
     sub colors { (q{Catppuccin::Data::Mocha::Color::Rosewater},q{Catppuccin::Data::Mocha::Color::Flamingo},q{Catppuccin::Data::Mocha::Color::Pink},q{Catppuccin::Data::Mocha::Color::Mauve},q{Catppuccin::Data::Mocha::Color::Red},q{Catppuccin::Data::Mocha::Color::Maroon},q{Catppuccin::Data::Mocha::Color::Peach},q{Catppuccin::Data::Mocha::Color::Yellow},q{Catppuccin::Data::Mocha::Color::Green},q{Catppuccin::Data::Mocha::Color::Teal},q{Catppuccin::Data::Mocha::Color::Sky},q{Catppuccin::Data::Mocha::Color::Sapphire},q{Catppuccin::Data::Mocha::Color::Blue},q{Catppuccin::Data::Mocha::Color::Lavender},q{Catppuccin::Data::Mocha::Color::Text},q{Catppuccin::Data::Mocha::Color::Subtext1},q{Catppuccin::Data::Mocha::Color::Subtext0},q{Catppuccin::Data::Mocha::Color::Overlay2},q{Catppuccin::Data::Mocha::Color::Overlay1},q{Catppuccin::Data::Mocha::Color::Overlay0},q{Catppuccin::Data::Mocha::Color::Surface2},q{Catppuccin::Data::Mocha::Color::Surface1},q{Catppuccin::Data::Mocha::Color::Surface0},q{Catppuccin::Data::Mocha::Color::Base},q{Catppuccin::Data::Mocha::Color::Mantle},q{Catppuccin::Data::Mocha::Color::Crust}) }
     sub ansi { q{Catppuccin::Data::Mocha::Ansi} }
-    package Catppuccin::Data::Mocha::Ansi {
+    package # hide from PAUSE
+     Catppuccin::Data::Mocha::Ansi {
       sub black { q{Catppuccin::Data::Mocha::Ansi::Black} }
-      package Catppuccin::Data::Mocha::Ansi::Black {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Black {
         sub id { q{black} }
         sub name { q{Black} }
         sub order { 0 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Black::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Black::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Black::Normal {
           sub name { q{Black} }
           sub code { 0 }
           sub hex { q{#45475a} }
@@ -1799,7 +1991,8 @@ package Catppuccin::Data {
           sub oklch { (0.403691419694441,0.0319546413282236,280.152003607294) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Black::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Black::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Black::Bright {
           sub name { q{Bright Black} }
           sub code { 8 }
           sub hex { q{#585b70} }
@@ -1809,12 +2002,14 @@ package Catppuccin::Data {
         }
       }
       sub red { q{Catppuccin::Data::Mocha::Ansi::Red} }
-      package Catppuccin::Data::Mocha::Ansi::Red {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Red {
         sub id { q{red} }
         sub name { q{Red} }
         sub order { 1 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Red::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Red::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Red::Normal {
           sub name { q{Red} }
           sub code { 1 }
           sub hex { q{#f38ba8} }
@@ -1823,7 +2018,8 @@ package Catppuccin::Data {
           sub oklch { (0.755592011161043,0.129702142513949,2.76416484470991) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Red::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Red::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Red::Bright {
           sub name { q{Bright Red} }
           sub code { 9 }
           sub hex { q{#f37799} }
@@ -1833,12 +2029,14 @@ package Catppuccin::Data {
         }
       }
       sub green { q{Catppuccin::Data::Mocha::Ansi::Green} }
-      package Catppuccin::Data::Mocha::Ansi::Green {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Green {
         sub id { q{green} }
         sub name { q{Green} }
         sub order { 2 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Green::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Green::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Green::Normal {
           sub name { q{Green} }
           sub code { 2 }
           sub hex { q{#a6e3a1} }
@@ -1847,7 +2045,8 @@ package Catppuccin::Data {
           sub oklch { (0.857704223179352,0.109228579658491,142.715289015539) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Green::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Green::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Green::Bright {
           sub name { q{Bright Green} }
           sub code { 10 }
           sub hex { q{#89d88b} }
@@ -1857,12 +2056,14 @@ package Catppuccin::Data {
         }
       }
       sub yellow { q{Catppuccin::Data::Mocha::Ansi::Yellow} }
-      package Catppuccin::Data::Mocha::Ansi::Yellow {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Yellow {
         sub id { q{yellow} }
         sub name { q{Yellow} }
         sub order { 3 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Yellow::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Yellow::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Yellow::Normal {
           sub name { q{Yellow} }
           sub code { 3 }
           sub hex { q{#f9e2af} }
@@ -1871,7 +2072,8 @@ package Catppuccin::Data {
           sub oklch { (0.919302853821224,0.070414627194939,86.528082232724) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Yellow::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Yellow::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Yellow::Bright {
           sub name { q{Bright Yellow} }
           sub code { 11 }
           sub hex { q{#ebd391} }
@@ -1881,12 +2083,14 @@ package Catppuccin::Data {
         }
       }
       sub blue { q{Catppuccin::Data::Mocha::Ansi::Blue} }
-      package Catppuccin::Data::Mocha::Ansi::Blue {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Blue {
         sub id { q{blue} }
         sub name { q{Blue} }
         sub order { 4 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Blue::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Blue::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Blue::Normal {
           sub name { q{Blue} }
           sub code { 4 }
           sub hex { q{#89b4fa} }
@@ -1895,7 +2099,8 @@ package Catppuccin::Data {
           sub oklch { (0.766420361629136,0.111344266788129,259.88497602028) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Blue::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Blue::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Blue::Bright {
           sub name { q{Bright Blue} }
           sub code { 12 }
           sub hex { q{#74a8fc} }
@@ -1905,12 +2110,14 @@ package Catppuccin::Data {
         }
       }
       sub magenta { q{Catppuccin::Data::Mocha::Ansi::Magenta} }
-      package Catppuccin::Data::Mocha::Ansi::Magenta {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Magenta {
         sub id { q{magenta} }
         sub name { q{Magenta} }
         sub order { 5 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Magenta::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Magenta::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Magenta::Normal {
           sub name { q{Magenta} }
           sub code { 5 }
           sub hex { q{#f5c2e7} }
@@ -1919,7 +2126,8 @@ package Catppuccin::Data {
           sub oklch { (0.870032607058557,0.0751577539668794,336.304084551999) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Magenta::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Magenta::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Magenta::Bright {
           sub name { q{Bright Magenta} }
           sub code { 13 }
           sub hex { q{#f2aede} }
@@ -1929,12 +2137,14 @@ package Catppuccin::Data {
         }
       }
       sub cyan { q{Catppuccin::Data::Mocha::Ansi::Cyan} }
-      package Catppuccin::Data::Mocha::Ansi::Cyan {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::Cyan {
         sub id { q{cyan} }
         sub name { q{Cyan} }
         sub order { 6 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::Cyan::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::Cyan::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Cyan::Normal {
           sub name { q{Cyan} }
           sub code { 6 }
           sub hex { q{#94e2d5} }
@@ -1943,7 +2153,8 @@ package Catppuccin::Data {
           sub oklch { (0.858489039899321,0.0792067005209004,182.74951302555) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::Cyan::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::Cyan::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::Cyan::Bright {
           sub name { q{Bright Cyan} }
           sub code { 14 }
           sub hex { q{#6bd7ca} }
@@ -1953,12 +2164,14 @@ package Catppuccin::Data {
         }
       }
       sub white { q{Catppuccin::Data::Mocha::Ansi::White} }
-      package Catppuccin::Data::Mocha::Ansi::White {
+      package # hide from PAUSE
+       Catppuccin::Data::Mocha::Ansi::White {
         sub id { q{white} }
         sub name { q{White} }
         sub order { 7 }
         sub normal { q{Catppuccin::Data::Mocha::Ansi::White::Normal} }
-        package Catppuccin::Data::Mocha::Ansi::White::Normal {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::White::Normal {
           sub name { q{White} }
           sub code { 7 }
           sub hex { q{#a6adc8} }
@@ -1967,7 +2180,8 @@ package Catppuccin::Data {
           sub oklch { (0.750960547260553,0.0395649859617788,273.931990372704) }
         }
         sub bright { q{Catppuccin::Data::Mocha::Ansi::White::Bright} }
-        package Catppuccin::Data::Mocha::Ansi::White::Bright {
+        package # hide from PAUSE
+         Catppuccin::Data::Mocha::Ansi::White::Bright {
           sub name { q{Bright White} }
           sub code { 15 }
           sub hex { q{#bac2de} }

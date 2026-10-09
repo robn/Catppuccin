@@ -1,6 +1,6 @@
 package Catppuccin;
 
-# ABSTRACT:
+# ABSTRACT: 😸 Soothing pastel theme for the high-spirited!
 
 use warnings;
 use strict;
